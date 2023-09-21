@@ -1,0 +1,25 @@
+.slider-actions {
+    position: absolute;
+    top: 50%;
+}
+
+.slider-actions .visually-hidden {
+    font-size: 30px;
+    color: white !important;
+}
+
+.slider-image {
+    height: 750px;
+    width: 100%;
+}
+
+.tm-heroslider-area {
+    margin-bottom: 100px;
+}
+
+@media (max-width:500px) {
+    .slider-image {
+        height: 380px;
+        width: auto;
+    }
+}

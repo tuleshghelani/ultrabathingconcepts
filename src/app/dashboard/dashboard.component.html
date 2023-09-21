@@ -1,0 +1,97 @@
+<div id="wrapper" class="wrapper">
+
+    <!-- Heroslider Area -->
+    <div class="tm-heroslider-area bg-grey">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="1000">
+                <img src="../../assets/bathroom-image-silder3.jpg" class="d-block w-100 slider-image" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="text-white">Elevate Your Everyday: Discover Our Bathroom Essentials</h3>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="../../assets/bathroom-image-silder2.jpg" class="d-block w-100 slider-image" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="text-white">Luxury Meets Functionality: Your Dream Bathroom Awaits.</h3>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="../../assets/bathroom-image-slider.jpg" class="d-block w-100 slider-image" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="text-white">Where Beauty Meets the Bath: Experience True Elegance.</h3>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev slider-actions" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next slider-actions" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+    <main class="page-content">
+        <!-- Features Area -->
+        <div class="tm-section tm-feature-area bg-grey">
+            <div class="container">
+                <div class="row mt-30-reverse">
+                    <!-- Single Feature -->
+                    <div class="col-lg-4 mt-30" *ngFor="let item of [1,2,3]">
+                        <div class="tm-feature">
+                            <span class="tm-feature-icon">
+                                <img src="../../assets/products/sincBasin.jpeg" alt="free shipping" loading="lazy">
+                            </span>
+                            <div class="tm-feature-content" style="margin-left: 20px;">
+                                <h6>Best quality</h6>
+                                <p>We provide best quality for all order</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Popular Products Area -->
+        <div id="tm-popular-products-area" class="tm-section tm-popular-products-area tm-padding-section bg-white">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-12">
+                        <div class="tm-sectiontitle text-center">
+                            <h3>POPULAR PRODUCTS</h3>
+                            <p>Our popular products are so beautyful to see that the shoppers are easily attracted
+                                to them.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row tm-products-slider">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12" *ngFor="let item of [1,2,3,4]">
+                        <div>
+                            <div class="">
+                                <img src="../../assets/products/sincBasin.jpeg" loading="lazy" alt="product image">
+                            </div>
+                            <!-- <div class="tm-product-badges">
+                                <span class="tm-product-badges-new">New</span>
+                                <span class="tm-product-badges-sale">Sale</span>
+                            </div> -->
+                            <div class="mt-30">
+                                <h4 style="text-align: center"> sinc Bath</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <app-footer></app-footer>
+    <button id="back-top-top" (click)="scrollToTop()" *ngIf="showButton"><i class="ion-arrow-up-c" style="font-size: 42px;">&#x2191;</i></button>
+    <!-- <button id="back-top-top"><i class="ion-arrow-up-c"></i></button> -->
+</div>

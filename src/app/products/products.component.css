@@ -1,0 +1,23 @@
+.breadcrumb-area {
+    position: relative;
+}
+
+.breadcrumb-area div {
+    position: absolute !important;
+    top: 50%;
+    left: 10%;
+    color: white;
+    cursor: pointer;
+}
+
+.selected-image {
+    width: 450px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.details-image:hover img {
+    opacity: 60%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
