@@ -11,12 +11,12 @@ export class ProductService {
   getAllProducts() {
     this.productList = [
       {
-        name:'Towel rack',
+        name:'Paper holder',
         category:'',
         code: '10101',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/10101/towel_rac.jpg',
+        productImage:'../../assets/products/10101/paper holder.jpg',
         description:'',
         allImages:[]
       },
@@ -46,7 +46,7 @@ export class ProductService {
         code: '10104',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/10101/Double soap dish.jpg',
+        productImage:'../../assets/products/10101/double soap dish.jpg',
         description:'',
         allImages:[]
       },
@@ -106,7 +106,117 @@ export class ProductService {
         code: '10110',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/10101/soap with liquid.jpg',
+        productImage:'../../assets/products/10101/soap with tumler.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Towel rack',
+        category:'',
+        code: '40401',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/40401/towel rack.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Towel rod',
+        category:'',
+        code: '40402',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/40401/towel rod.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Single soap dish',
+        category:'',
+        code: '40403',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/40401/single soap dish.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Double soap dish',
+        category:'',
+        code: '40404',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/40401/double soap dish.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Tumler holder',
+        category:'',
+        code: '40405',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/40401/tumler holder.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'liquid dispencer',
+        category:'',
+        code: '40406',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/40401/liquid dispencer.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Soap with tumler holder',
+        category:'',
+        code: '40407',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/40401/soap with tumler holder.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Soap with liquid',
+        category:'',
+        code: '40408',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/40401/soap with liquid.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Rob hook',
+        category:'',
+        code: '40409',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/40401/rob hook.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Napkeen ring',
+        category:'',
+        code: '40409',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/40401/napkeen ring.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Paper holder',
+        category:'',
+        code: '40409',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/40401/paper holder.jpg',
         description:'',
         allImages:[]
       },
