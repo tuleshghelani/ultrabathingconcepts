@@ -220,6 +220,286 @@ export class ProductService {
         description:'',
         allImages:[]
       },
+      {
+        name:'Towel rack',
+        category:'',
+        code: '5001',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/5001/towel rack.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Towel rod',
+        category:'',
+        code: '5002',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/5001/towel rod.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Single soap dish',
+        category:'',
+        code: '5003',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/5001/single soap dish.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Double soap dish',
+        category:'',
+        code: '5004',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/5001/double soap dish.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Single tumler',
+        category:'',
+        code: '5005',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/5001/double soap dish.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Soap with tumler',
+        category:'',
+        code: '5007',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/5001/soap with tumler.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Self with soap & tumler',
+        category:'',
+        code: '5008',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/5001/self with soap & tumler.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Self bath',
+        category:'',
+        code: '5009',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/5001/self bath.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Napkeen stand',
+        category:'',
+        code: '5010',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/5001/napkeen stand.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Paper holder',
+        category:'',
+        code: '5011',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/5001/paper holder.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Towel rack',
+        category:'',
+        code: '6001',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/6001/towel rack.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Towel rod',
+        category:'',
+        code: '6002',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/6001/towel rod.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Double soap dish',
+        category:'',
+        code: '6003',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/6001/double soap dish.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Soap with tumler',
+        category:'',
+        code: '6004',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/6001/soap with tumler.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Single tumler',
+        category:'',
+        code: '6005',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/6001/single tumler.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Liquid dispensor',
+        category:'',
+        code: '6006',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/6001/liquid dispensor.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Rob hook',
+        category:'',
+        code: '6007',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/6001/rob hook.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Towel rack',
+        category:'',
+        code: '2001',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/2001/towel rack.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Towel rod',
+        category:'',
+        code: '2002',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/2001/towel rod.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Single soap dish',
+        category:'',
+        code: '2003',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/2001/single soap dish.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Double soap dish',
+        category:'',
+        code: '2004',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/2001/double soap dish.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Single tumler',
+        category:'',
+        code: '2005',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/2001/single tumler.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Liquid dispensor',
+        category:'',
+        code: '2006',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/2001/liquid dispensor.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Soap with tumler',
+        category:'',
+        code: '2007',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/2001/soap with tumler.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Bath self',
+        category:'',
+        code: '2008',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/2001/bath self.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Robe hook',
+        category:'',
+        code: '2009',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/2001/robe hook.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Squre napkeen stand',
+        category:'',
+        code: '2010',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/2001/squre napkeen stand.jpg',
+        description:'',
+        allImages:[]
+      },
+      {
+        name:'Paper holder',
+        category:'',
+        code: '2011',
+        modelNo:'',
+        price:200,
+        productImage:'../../assets/products/S.S - 202/2001/paper holder.jpg',
+        description:'',
+        allImages:[]
+      },
       // {
       //   name:'Product 2',
       //   category:'',

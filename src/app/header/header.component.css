@@ -1,3 +1,37 @@
+.navbar-collapse {
+    height: 100px;
+}
+
+.header-menus li a:hover {
+    color: white;
+}
+
+.header-menus li:hover {
+    border-radius: 8px;
+    background: #9b0b02;
+}
+
+.active {
+    color: white;
+    border-radius: 8px;
+    background: #9b0b02;
+}
+
+.active a {
+    color: #fff;
+}
+@media(max-width:480px){
+    .header-menus {
+        padding-top: 10px;
+    }
+    .header-menus li a {
+        display: flex;
+        justify-content: center;
+    }
+    .navbar-collapse {
+        height: 170px !important;
+    }
+}
 @media (min-width:1300px) {
     .header-menus {
         margin-left: 200px;

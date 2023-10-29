@@ -29,7 +29,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a routerLink="/" class="tm-header-logo">
-                    <img src="../../assets/logo/Ultra_bathing_logo.png"  alt="ultrabathingconcepts">
+                    <img src="../../assets/logo/ultra.png"  alt="ultrabathingconcepts">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -38,21 +38,21 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 header-menus">
-                        <li class="nav-item mx-5">
-                            <a class="nav-link" aria-current="page" routerLink="/" routerLinkActive="active">Home</a>
+                        <li class="nav-item mx-5" routerLinkActive="active" [ngClass]="{ 'active': isHomeRouteActive() }">
+                            <a class="nav-link " aria-current="page" [routerLink]="['/']">Home</a>
                         </li>
-                        <li class="nav-item mx-5">
-                            <a class="nav-link" aria-current="page" routerLink="/about-us" routerLinkActive="active">About</a>
+                        <li class="nav-item mx-5" routerLinkActive="active">
+                            <a class="nav-link" aria-current="page" [routerLink]="['/about-us']">About</a>
                         </li>
-                        <li class="nav-item mx-5">
-                            <a class="nav-link" aria-current="page" routerLink="/products" routerLinkActive="active">Product</a>
+                        <li class="nav-item mx-5" routerLinkActive="active">
+                            <a class="nav-link" aria-current="page" [routerLink]="['/products']">Product</a>
                         </li>
-                        <li class="nav-item mx-5">
-                            <a class="nav-link" aria-current="page" routerLink="/contact-us" routerLinkActive="active">Contact Us</a>
+                        <li class="nav-item mx-5" routerLinkActive="active">
+                            <a class="nav-link" aria-current="page" [routerLink]="['/contact-us']" >Contact Us</a>
                         </li>
                     </ul>
-                    <ul class="tm-header-icons hidden-mobile">
-                        <li class="hidden-mobile"><a routerLink="/contact-us"><button class="btn-hedaer">
+                    <ul class="tm-header-icons hidden-mobile" routerLinkActive="active">
+                        <li class="hidden-mobile"><a routerLink="['/contact-us']"><button class="btn-hedaer">
                                     Contact Us
                                 </button></a></li>
                     </ul>

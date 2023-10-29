@@ -1286,7 +1286,7 @@ input[type=radio]:checked~label::before {
 }
 
 .tm-padding-section {
-    padding-top: 200px;
+    margin-top: 240px !important;
     padding-bottom: 100px
 }
 
@@ -1328,7 +1328,7 @@ input[type=radio]:checked~label::before {
 
 @media only screen and (max-width:767px) {
     .tm-padding-section {
-        padding-top: 70px;
+        /* padding-top: 70px; */
         padding-bottom: 70px
     }
 
@@ -5318,11 +5318,11 @@ button.tm-videobutton img {
     position: absolute;
     left: 0;
     top: 0;
-    color: #000
+    color: #fff
 }
 
 .widget-info ul li a {
-    color: #707070
+    color: #fff
 }
 
 .widget-info ul li a:hover {
@@ -5340,7 +5340,7 @@ button.tm-videobutton img {
 .widget-quicklinks ul li a {
     display: block;
     font-weight: 400;
-    color: #707070;
+    color: #ffffff;
     position: relative
 }
 
@@ -6113,22 +6113,26 @@ button.tm-videobutton img {
 }
 
 .tm-footer-toparea {
-    background-position: top center
+    background-position: top center;
+    background-color: black;
+    color: #ffffff;
 }
 
 .tm-footer-bottomarea {
     border-top: 1px solid #ebebeb;
-    padding: 20px 0
+    padding: 20px 0;
+    background-color: #000;
 }
 
 .tm-footer-copyright {
     margin-bottom: 0;
-    margin: 5px 0
+    margin: 5px 0;
+    color: #fff;
 }
 
 .tm-footer-copyright a {
     font-weight: 600;
-    color: #707070
+    color: #fff
 }
 
 .tm-footer-copyright a:hover {
