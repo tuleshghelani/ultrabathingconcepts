@@ -50,7 +50,7 @@ export class ProductService {
         homepage: true,
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/10101/double soap dish.jpg',
+        productImage:'../../assets/products/10101/double_soap_dish.jpg',
         description:'',
         allImages:[]
       },
