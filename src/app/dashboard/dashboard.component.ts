@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,10 +8,19 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
-  showButton = true;
+  constructor(
+    private productService:ProductService,
+  ) { }
+  showButton = true;  
+  allProductList:any[] = []
   
   ngOnInit(): void {
+    this.getAllProducts();
+  }
+
+  
+  getAllProducts(){
+    this.allProductList = this.productService.getAllProducts().filter(product => product.homepage === true);;
   }
   
   @HostListener('window:scroll', [])

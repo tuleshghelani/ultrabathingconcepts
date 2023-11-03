@@ -1441,7 +1441,7 @@ input[type=radio]:checked~label::before {
     padding: 0;
     line-height: 1;
     text-align: center;
-    background: #3e4095;
+    background: #9b0b02;
     color: #fff;
     font-size: 18px;
     border-radius: 100%;

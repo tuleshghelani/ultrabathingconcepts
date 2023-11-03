@@ -84,17 +84,17 @@
                     </div>
                 </div>
                 <div class="row tm-products-slider">
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12" *ngFor="let item of [1,2,3,4]">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12" *ngFor="let product of allProductList">
                         <div>
                             <div class="">
-                                <img src="../../assets/products/sincBasin.jpeg" loading="lazy" alt="product image">
+                                <img [src]="product.productImage"  loading="lazy" alt="product image">
                             </div>
                             <!-- <div class="tm-product-badges">
                                 <span class="tm-product-badges-new">New</span>
                                 <span class="tm-product-badges-sale">Sale</span>
                             </div> -->
                             <div class="mt-30">
-                                <h4 style="text-align: center"> sinc Bath</h4>
+                                <h4 style="text-align: center"> {{product.name}}</h4>
                             </div>
                         </div>
                     </div>
