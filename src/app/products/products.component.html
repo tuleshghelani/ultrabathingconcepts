@@ -34,23 +34,28 @@
             <div class="container">
                 <div class="tm-shop-products">
                     <div class="row mt-30-reverse">
-                        <!-- Products -->
-                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3 col-12 mt-50 d-flex justify-content-center"
-                            *ngFor="let product of allProductList">
-                            <div (click)="moreProductDetails(product)" data-bs-toggle="modal"
-                                data-bs-target="#moreDetailsDialog">
-                                <img [src]="product.productImage" alt="product image" loading="lazy" 
-                                class="img-product"/>
-                                <div class="tm-product-bottomside">
-                                    <h6 class="tm-product-title">
-                                        <p class="item-name d-flex justify-content-center ">{{product.name}}</p>
-                                        <p class="item-name d-flex justify-content-center ">Code : {{product.code}}</p>
-                                    </h6>
-                                </div>
-                            </div>
+                      <div
+                        class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3 col-12 mt-50 d-flex justify-content-center"
+                        *ngFor="let product of allProductList; let i = index"
+                      >
+                        <div
+                          [@productAnimation]="'in'" 
+                          (click)="moreProductDetails(product)"
+                          data-bs-toggle="modal"
+                          data-bs-target="#moreDetailsDialog"
+                        >
+                          <img [src]="product.productImage" alt="product image" loading="lazy" class="img-product" />
+                          <div class="tm-product-bottomside">
+                            <h6 class="tm-product-title">
+                              <p class="item-name d-flex justify-content-center ">{{product.name}}</p>
+                              <p class="item-name d-flex justify-content-center ">Code : {{product.code}}</p>
+                            </h6>
+                          </div>
                         </div>
+                      </div>
                     </div>
-                </div>
+                  </div>
+                                   
             </div>
         </div>
     </main>

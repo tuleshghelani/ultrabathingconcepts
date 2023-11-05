@@ -48,22 +48,33 @@
                     <div class="col-lg-4 mt-30" *ngFor="let item of [1]">
                         <div class="tm-feature">
                             <span class="tm-feature-icon">
-                                <img src="../../assets/products/sincBasin.jpeg" alt="free shipping" loading="lazy">
+                                <img class="feature-image" src="../../assets/home/best_quality_1.png" alt="free shipping" loading="lazy">
                             </span>
                             <div class="tm-feature-content" style="margin-left: 20px;">
-                                <h6>Best quality</h6>
-                                <p>We provide best quality for all order</p>
+                                <h6 class="feature-header">Best quality</h6>
+                                <p>Every piece of material we make reflects our dedication to excellence.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 mt-30" *ngFor="let item of [1]">
                         <div class="tm-feature">
                             <span class="tm-feature-icon">
-                                <img src="../../assets/products/sincBasin.jpeg" alt="free shipping" loading="lazy">
+                                <img class="feature-image" src="../../assets/home/most-trusted-brand_1.png" alt="free shipping" loading="lazy">
                             </span>
                             <div class="tm-feature-content" style="margin-left: 20px;">
-                                <h6>Good customer review</h6>
-                                <p>We always deliver our customers very quickly.</p>
+                                <h6 class="feature-header">Most trusted brand</h6>
+                                <p>Trust is our cornerstone. Discover why we are the most trusted brand online.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-30" *ngFor="let item of [1]">
+                        <div class="tm-feature">
+                            <span class="tm-feature-icon">
+                                <img class="feature-image" src="../../assets/home/best_value_for_money_1.png" alt="free shipping" loading="lazy">
+                            </span>
+                            <div class="tm-feature-content" style="margin-left: 20px;">
+                                <h6 class="feature-header">Great value for money</h6>
+                                <p>We take pride in providing high-quality items at a reasonable price.</p>
                             </div>
                         </div>
                     </div>
@@ -87,7 +98,8 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 col-12" *ngFor="let product of allProductList">
                         <div>
                             <div class="">
-                                <img [src]="product.productImage"  loading="lazy" alt="product image">
+                                <a routerLink="/products"><img [src]="product.productImage"  loading="lazy" alt="product image">
+                                </a>
                             </div>
                             <!-- <div class="tm-product-badges">
                                 <span class="tm-product-badges-new">New</span>

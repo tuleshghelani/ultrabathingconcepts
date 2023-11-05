@@ -1,10 +1,20 @@
 import { Component, OnInit, ViewChild, HostListener, ElementRef } from '@angular/core';
 import { ProductService } from '../services/product.service';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
+  styleUrls: ['./products.component.css'],
+  animations: [
+    trigger('productAnimation', [
+      state('in', style({ opacity: 1, transform: 'translateY(0)' })),
+      transition(':enter', [
+        style({ opacity: 0, transform: 'translateY(100%)' }),
+        animate('2s ease-out'),
+      ]),
+    ]),
+  ],
 })
 export class ProductsComponent implements OnInit {
   // @ViewChild('moreDetailsDialog');
@@ -40,15 +50,21 @@ export class ProductsComponent implements OnInit {
   loadMoreProducts() {
     if (!this.isLoading) {
       this.isLoading = true;
-      // Fetch the next batch of products (e.g., using a service)
       const nextProducts = this.getProductsBatch(this.batchSize, this.currentPage);
       if (nextProducts.length > 0) {
+        // Apply the animation class to newly added products
+        nextProducts.forEach((product, index) => {
+          product.animationClass = 'product-animation';
+        });
+  
+        // Concatenate the new products to the list
         this.allProductList = [...this.allProductList, ...nextProducts];
         this.currentPage++;
       }
       this.isLoading = false;
     }
   }
+  
 
   getProductsBatch(batchSize: number, page: number): any[] {
     const startIndex = (page - 1) * batchSize;

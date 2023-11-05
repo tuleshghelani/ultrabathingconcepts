@@ -2052,7 +2052,7 @@ button.tm-videobutton img {
     -webkit-flex: 0 0 100px;
     -ms-flex: 0 0 100px;
     flex: 0 0 100px;
-    max-width: 100px;
+    max-width: 500px;
     text-align: center;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
@@ -7134,7 +7134,7 @@ button.tm-videobutton img {
     display: inline-block;
     font-size: 14px;
     padding: 12px 58px;
-    background-color: #3e4095;
+    background-color: #9b0b02;
     color: #fff;
     text-align: center;
     font-weight: 500;
@@ -7289,4 +7289,8 @@ button.tm-videobutton img {
         padding-top: -520px;
         margin-top: -80px;
     }
+}
+
+.feature-header {
+    color: #9b0b02;
 }

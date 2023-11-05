@@ -28,3 +28,22 @@
     height: 220px;
     /* object-fit: cover; */
 }
+
+.product-animation {
+    animation-name: slideFromBottom;
+    animation-duration: 5.8s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes slideFromBottom {
+    from {
+      transform: translateY(100%); /* Start from bottom */
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0); /* End at the original position */
+      opacity: 1;
+    }
+  }
+  
