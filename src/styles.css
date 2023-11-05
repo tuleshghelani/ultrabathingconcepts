@@ -607,7 +607,7 @@ h6 {
 }
 
 ::selection {
-    background: #f2ba59;
+    background: #9b0b02;
     color: #fff
 }
 
@@ -1237,6 +1237,10 @@ input[type=radio]:checked~label::before {
 
 .bg-black {
     background-color: #3e4095
+}
+
+.bg-red {
+    background-color: #9b0b02
 }
 
 .bg-white {
