@@ -73,8 +73,18 @@
                         <li class="nav-item mx-5" routerLinkActive="active">
                             <a class="nav-link" aria-current="page" [routerLink]="['/about-us']">About</a>
                         </li>
-                        <li class="nav-item mx-5" routerLinkActive="active">
-                            <a class="nav-link" aria-current="page" [routerLink]="['/products']">Product</a>
+                        <li class="nav-item mx-5 dropdown text-center" routerLinkActive="active">
+                            <div class="nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                              Product
+                            </div>
+                            <div class="dropdown-content">
+                                <a [routerLink]="['/products']" class="dropdown-item">All products</a>
+                                <a [routerLink]="['/category-wise-products']" class="dropdown-item">Category wise product</a>
+                            </div>
+                            <!-- <div class="dropdown-menu">
+                                <a [routerLink]="['/products']" class="dropdown-item">All products</a>
+                                <a [routerLink]="['/category-wise-products']" class="dropdown-item">Category wise product</a>
+                            </div> -->
                         </li>
                         <li class="nav-item mx-5" routerLinkActive="active">
                             <a class="nav-link" aria-current="page" [routerLink]="['/contact-us']" >Contact Us</a>
