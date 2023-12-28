@@ -16,4 +16,12 @@ export class HeaderComponent implements OnInit {
   isHomeRouteActive(): boolean {
     return this.router.isActive('/', true);
   }
+
+  openPDF(): void {
+    // Modify the path based on your file structure
+    const pdfPath = '/assets/products/ULTRA BATH CONCEPT BROCHURE DESIGN.- 03-08-23.pdf'; // Path to your PDF file
+
+    // Open the PDF in a new tab
+    window.open(pdfPath, '_blank');
+  }
 }

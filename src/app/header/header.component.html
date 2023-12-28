@@ -91,9 +91,11 @@
                         </li>
                     </ul>
                     <ul class="tm-header-icons hidden-mobile" routerLinkActive="active">
-                        <li class="hidden-mobile"><a routerLink="['/contact-us']"><button class="btn-hedaer">
-                                    Contact Us
-                                </button></a></li>
+                        <li class="hidden-mobile">
+                            <button class="btn-hedaer" (click)="openPDF()">
+                                Download browser
+                            </button>
+                        </li>
                     </ul>
                 </div>
             </div>
