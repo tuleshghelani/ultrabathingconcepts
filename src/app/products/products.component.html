@@ -28,34 +28,45 @@
     <!--// Breadcrumb Area -->
 
     <!-- Page Content -->
-    <main class="page-content">
+    <main class="page-content" style="padding-top: -100px;">
         <!-- Products Wrapper -->
-        <div class="tm-products-area tm-section tm-padding-section bg-white d-flex justify-content-center">
+        <div class="tm-products-area tm-section tm-padding-section bg-white">
             <div class="container">
                 <div class="tm-shop-products">
                     <div class="row mt-30-reverse">
-                      <div
-                        class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3 col-12 mt-50 d-flex justify-content-center"
-                        *ngFor="let product of allProductList; let i = index"
-                      >
                         <div
-                          [@productAnimation]="'in'" 
-                          (click)="moreProductDetails(product)"
-                          data-bs-toggle="modal"
-                          data-bs-target="#moreDetailsDialog"
+                            class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3 col-12 mt-50"
+                            *ngFor="let product of allProductList; let i = index"
                         >
-                          <img style="width: 280px; height: 280px;" [src]="product.productImage" alt="product image" loading="lazy" class="img-product" />
-                          <div class="tm-product-bottomside">
-                            <h6 class="tm-product-title">
-                              <p class="item-name d-flex justify-content-center ">{{product.name}}</p>
-                              <p class="item-name d-flex justify-content-center ">Code : {{product.code}}</p>
-                            </h6>
-                          </div>
+                            <div
+                                class="product-card"
+                                [@fadeInUp]="{ value: '', params: { delay: i * 100 } }"
+                                (click)="moreProductDetails(product)"
+                                (mousemove)="onMouseMove($event, product)"
+                                data-bs-toggle="modal"
+                                data-bs-target="#moreDetailsDialog"
+                            >
+                                <div class="product-image-wrapper">
+                                    <img [src]="product.productImage" alt="product image" loading="lazy" class="img-product" />
+                                    <div class="product-overlay">
+                                        <span class="view-details">View Details</span>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h6 class="product-title">{{product.name}}</h6>
+                                    <p class="product-code">Code: {{product.code}}</p>
+                                </div>
+                                <div
+                                    class="ripple-effect"
+                                    [@ripple]="rippleState"
+                                    (@ripple.done)="onAnimationDone()"
+                                    [style.left.px]="rippleX"
+                                    [style.top.px]="rippleY"
+                                ></div>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
-                                   
+                </div>
             </div>
         </div>
     </main>
@@ -72,16 +83,16 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body row">
-                <div class="col-6">
-                    <img class="selected-image" [src]="selectedProductImage">
+                <div class="col-12 text-center">
+                    <img class="selected-image" [src]="productDetail?.productImage" width="100%" height="100%">
                 </div>
-                <div class="col-6">
+                <!-- <div class="col-6">
                     <div class="row">
                         <div class="col-4 mt-3 details-image" *ngFor="let item of productDetail?.allImages">
                             <img [src]="item?.image" (click)="selectedImage(item.image)">
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
