@@ -103,9 +103,7 @@ export class DashboardComponent implements OnInit, AfterViewInit {
   private updateSliderPosition() {
     const maxTranslate = -(this.allProductList.length - 1) * 100;
     this.currentTranslate = Math.max(Math.min(this.currentTranslate, 0), maxTranslate);
-    if (this.sliderTrack) {
-      this.sliderTrack.nativeElement.style.transform = `translateX(${this.currentTranslate}%)`;
-    }
+    this.sliderTrack?.nativeElement?.style.setProperty('transform', `translateX(${this.currentTranslate}%)`);
   }
 
   onTouchStart(event: TouchEvent) {
