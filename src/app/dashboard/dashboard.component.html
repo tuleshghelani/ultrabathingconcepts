@@ -83,36 +83,33 @@
         </div>
 
         <!-- Popular Products Area -->
-        <div id="tm-popular-products-area" class="tm-section tm-popular-products-area tm-padding-section bg-white">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 col-12">
-                        <div class="tm-sectiontitle text-center">
-                            <h3>POPULAR PRODUCTS</h3>
-                            <p>Our popular products are so beautyful to see that the shoppers are easily attracted
-                                to them.</p>
+        <section class="popular-products-section">
+          <div class="container">
+            <h2 class="section-title">Popular Products</h2>
+            <p class="section-subtitle">Discover our exquisite collection of bathroom essentials</p>
+
+            <div class="product-slider-container">
+              <button class="slider-arrow prev-arrow" (click)="prevSlide()" aria-label="Previous slide">&lt;</button>
+              <div class="product-slider" (touchstart)="onTouchStart($event)" (touchmove)="onTouchMove($event)" (touchend)="onTouchEnd()">
+                <div class="slider-container">
+                  <div class="slider-track" #sliderTrack>
+                    <div class="product-slide" *ngFor="let product of allProductList; let i = index">
+                      <div class="product-card" (mouseenter)="onProductHover(i)" (mouseleave)="onProductLeave(i)">
+                        <div class="product-image">
+                          <img [src]="product.productImage" [alt]="product.name" loading="lazy">
                         </div>
-                    </div>
-                </div>
-                <div class="row tm-products-slider">
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12" *ngFor="let product of allProductList">
-                        <div>
-                            <div class="">
-                                <a routerLink="/products"><img [src]="product.productImage"  loading="lazy" alt="product image">
-                                </a>
-                            </div>
-                            <!-- <div class="tm-product-badges">
-                                <span class="tm-product-badges-new">New</span>
-                                <span class="tm-product-badges-sale">Sale</span>
-                            </div> -->
-                            <div class="mt-30">
-                                <h4 style="text-align: center"> {{product.name}}</h4>
-                            </div>
+                        <div class="product-info" [class.active]="hoveredIndex === i">
+                          <h3>{{product.name}}</h3>
                         </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
+              <button class="slider-arrow next-arrow" (click)="nextSlide()" aria-label="Next slide">&gt;</button>
             </div>
-        </div>
+          </div>
+        </section>
     </main>
     <app-footer></app-footer>
     <button id="back-top-top" (click)="scrollToTop()" *ngIf="showButton"><i class="ion-arrow-up-c" style="font-size: 42px;">&#x2191;</i></button>

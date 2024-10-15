@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ElementRef, Renderer2, ViewChild, HostListener } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ElementRef, Renderer2, ViewChild, HostListener, NgZone, OnDestroy } from '@angular/core';
 import { ProductService } from '../services/product.service';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 
@@ -29,7 +29,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     ])
   ],
 })
-export class ProductsComponent implements OnInit, AfterViewInit {
+export class ProductsComponent implements OnInit, AfterViewInit, OnDestroy {
   // @ViewChild('moreDetailsDialog');
 
   rippleState: string = 'inactive';
@@ -42,11 +42,17 @@ export class ProductsComponent implements OnInit, AfterViewInit {
   currentPage = 1; // Current page
   isLoading = false;
   @ViewChild('scrollContainer', { static: true }) scrollContainer!: ElementRef<any>;
+  @ViewChild('interactiveBackground') interactiveBackground!: ElementRef;
+
+  private ctx!: CanvasRenderingContext2D;
+  private particles: Particle[] = [];
+  private animationFrame: number | null = null;
 
   constructor(
     private productService:ProductService,
     private renderer: Renderer2,
-    private el: ElementRef
+    private el: ElementRef,
+    private ngZone: NgZone
   ) { }
 
   ngOnInit(): void {
@@ -55,6 +61,13 @@ export class ProductsComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     this.initCursorFollower();
+    this.initInteractiveBackground();
+  }
+
+  ngOnDestroy(): void {
+    if (this.animationFrame) {
+      cancelAnimationFrame(this.animationFrame);
+    }
   }
 
   private initCursorFollower() {
@@ -65,6 +78,24 @@ export class ProductsComponent implements OnInit, AfterViewInit {
     this.renderer.listen('document', 'mousemove', (event: MouseEvent) => {
       this.renderer.setStyle(cursorFollower, 'left', `${event.clientX}px`);
       this.renderer.setStyle(cursorFollower, 'top', `${event.clientY}px`);
+    });
+  }
+
+  private initInteractiveBackground(): void {
+    const canvas = this.interactiveBackground.nativeElement;
+    this.ctx = canvas.getContext('2d');
+
+    const resizeCanvas = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
+
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    this.ngZone.runOutsideAngular(() => {
+      canvas.addEventListener('mousemove', this.onMouseMove.bind(this));
+      this.animate();
     });
   }
 
@@ -117,14 +148,65 @@ export class ProductsComponent implements OnInit, AfterViewInit {
     this.selectedProductImage = image
   }
 
-  onMouseMove(event: MouseEvent, product: any) {
+  onAnimationDone() {
+    this.rippleState = 'inactive';
+  }
+
+  onMouseMove(event: MouseEvent, product: any): void {
     const rect = (event.target as HTMLElement).getBoundingClientRect();
     this.rippleX = event.clientX - rect.left;
     this.rippleY = event.clientY - rect.top;
     this.rippleState = 'active';
+    const x = event.clientX;
+    const y = event.clientY;
+    for (let i = 0; i < 3; i++) {
+      this.particles.push(new Particle(x, y, this.ctx));
+    }
   }
 
-  onAnimationDone() {
-    this.rippleState = 'inactive';
+  private animate(): void {
+    this.ctx.clearRect(0, 0, this.ctx.canvas.width, this.ctx.canvas.height);
+
+    this.particles.forEach((particle, index) => {
+      if (particle.alpha <= 0) {
+        this.particles.splice(index, 1);
+      } else {
+        particle.update();
+      }
+    });
+
+    this.animationFrame = requestAnimationFrame(() => this.animate());
+  }
+}
+
+class Particle {
+  private x: number;
+  private y: number;
+  private vx: number;
+  private vy: number;
+  private color: string;
+  public alpha: number;
+  private ctx: CanvasRenderingContext2D;
+
+  constructor(x: number, y: number, ctx: CanvasRenderingContext2D) {
+    this.x = x;
+    this.y = y;
+    this.vx = Math.random() * 2 - 1;
+    this.vy = Math.random() * 2 - 1;
+    this.color = `hsl(${Math.random() * 360}, 50%, 50%)`;
+    this.alpha = 1;
+    this.ctx = ctx;
+  }
+
+  update(): void {
+    this.x += this.vx;
+    this.y += this.vy;
+    this.alpha -= 0.01;
+
+    this.ctx.beginPath();
+    this.ctx.arc(this.x, this.y, 2, 0, Math.PI * 2);
+    this.ctx.fillStyle = this.color;
+    this.ctx.globalAlpha = this.alpha;
+    this.ctx.fill();
   }
 }

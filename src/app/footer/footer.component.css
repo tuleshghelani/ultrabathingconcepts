@@ -1,5 +1,159 @@
-hr { 
-    height: 4px; 
-    background-color: #9b0b02; 
-    border: none; 
-} 
+hr {
+    height: 4px;
+    background-color: #9b0b02;
+    border: none;
+}
+
+.footer-divider {
+  border: #000;
+  height: 2px;
+  background-color: black;
+  margin: 0;
+}
+
+.footer {
+  background-color: #f8f0e3;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-top {
+  padding: 60px 0 40px;
+}
+
+.footer-widget h4 {
+  color: #9b0b02;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.footer-widget h4:hover {
+  transform: translateX(5px);
+}
+
+.footer-widget h4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #9b0b02;
+  transition: width 0.3s ease;
+}
+
+.footer-widget h4:hover::after {
+  width: 100%;
+}
+
+.footer-widget p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.footer-links a:hover {
+  color: #9b0b02;
+  transform: translateX(5px);
+}
+
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contact li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.footer-contact li:hover {
+  transform: translateX(5px);
+}
+
+.footer-contact i {
+  color: #9b0b02;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.footer-contact li:hover i {
+  transform: scale(1.2);
+}
+
+.footer-contact a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: #9b0b02;
+}
+
+.footer-bottom {
+  background-color: #9b0b02;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.copyright {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer-social {
+  text-align: right;
+}
+
+.footer-social a {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-left: 15px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  display: inline-block;
+}
+
+.footer-social a:hover {
+  opacity: 0.8;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 767px) {
+  .footer-widget {
+    margin-bottom: 30px;
+  }
+
+  .footer-social {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .copyright {
+    text-align: center;
+  }
+}

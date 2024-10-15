@@ -9,7 +9,7 @@ export class ProductService {
   categoryWiseproductList: any[] = []
   constructor() { }
 
-  
+
   getCategoryWiseProducts() {
     this.categoryWiseproductList = [
     {
@@ -424,10 +424,15 @@ export class ProductService {
         }
       ]
     },
-  
-  
+
+
   ];
     return this.categoryWiseproductList;
+  }
+
+  getDashboardProducts(){
+    this.productList = this.productList.filter(product => product.homepage === true);
+    return this.productList;
   }
 
   getAllProducts() {
@@ -481,6 +486,7 @@ export class ProductService {
         category:'',
         code: '10105',
         modelNo:'',
+        homepage: true,
         price:200,
         productImage:'../../assets/products/10101/single tumler.jpg',
         description:'',
@@ -490,6 +496,7 @@ export class ProductService {
         name:'Liquid dispensor',
         category:'',
         code: '10106',
+        homepage: true,
         modelNo:'',
         price:200,
         productImage:'../../assets/products/10101/liquid dispensor.jpg',
@@ -500,6 +507,7 @@ export class ProductService {
         name:'Soap with tumler',
         category:'',
         code: '10107',
+        homepage: true,
         modelNo:'',
         price:200,
         productImage:'../../assets/products/10101/soap with tumler.jpg',
@@ -510,6 +518,7 @@ export class ProductService {
         name:'Soap with liquid',
         category:'',
         code: '10108',
+        homepage: true,
         modelNo:'',
         price:200,
         productImage:'../../assets/products/10101/soap with liquid.jpg',

@@ -57,7 +57,7 @@
 }
 
 .product-card {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
@@ -128,4 +128,104 @@
 .product-code {
     font-size: 0.9em;
     color: #666;
+}
+
+
+.modal-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.page-content {
+    position: relative;
+    overflow: hidden;
+}
+
+.animated-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #e6f3ff, #ffffff, #e1f1ff);
+    background-size: 400% 400%;
+    animation: gradientFlow 15s ease infinite;
+    z-index: -1;
+}
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.tm-products-area {
+    position: relative;
+    z-index: 1;
+}
+
+.water-flow-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #e6f3ff, #ffffff);
+    z-index: -1;
+}
+
+.water-flow-background::before,
+.water-flow-background::after {
+    content: '';
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image:
+        radial-gradient(circle, rgba(255,255,255,0.3) 2px, transparent 2px),
+        radial-gradient(circle, rgba(255,255,255,0.4) 1px, transparent 1px);
+    background-size: 80px 80px, 50px 50px;
+    animation: waterFlow 15s linear infinite;
+    opacity: 0.5;
+}
+
+.water-flow-background::after {
+    top: 0;
+    left: 0;
+    background-size: 60px 60px, 40px 40px;
+    animation-duration: 20s;
+}
+
+@keyframes waterFlow {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .water-flow-background::before,
+    .water-flow-background::after {
+        background-size: 60px 60px, 40px 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .water-flow-background::before,
+    .water-flow-background::after {
+        background-size: 40px 40px, 30px 30px;
+    }
 }
