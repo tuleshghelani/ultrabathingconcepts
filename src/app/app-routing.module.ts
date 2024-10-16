@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProductsComponent } from './products/products.component';
+import { BrochureViewerComponent } from './brochure-viewer/brochure-viewer.component';
 
 const routes: Routes = [
   { path: '', component: DashboardComponent, pathMatch: 'full' },
@@ -14,6 +15,10 @@ const routes: Routes = [
     loadChildren: () => import('./about-us/about-us.module').then(m => m.AboutUsModule)
   },
   { path: 'contact-us', loadChildren: () => import('./contact-us/contact-us.module').then(m => m.ContactUsModule) },
+  {
+    path: 'brochure-viewer',
+    loadChildren: () => import('./brochure-viewer/brochure-viewer.module').then(m => m.BrochureViewerModule)
+  }
 ];
 
 @NgModule({

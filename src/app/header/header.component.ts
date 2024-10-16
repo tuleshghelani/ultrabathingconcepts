@@ -26,6 +26,7 @@ export class HeaderComponent {
     // Open the PDF in a new tab
     window.open(pdfPath, '_blank');
   }
+  
 
   toggleNavbar() {
     this.isNavbarCollapsed = !this.isNavbarCollapsed;
@@ -55,5 +56,9 @@ export class HeaderComponent {
     if (!dropdownElement) {
       this.isDropdownOpen = false;
     }
+  }
+
+  openBrochureViewer() {
+    this.router.navigate(['/brochure-viewer']);
   }
 }

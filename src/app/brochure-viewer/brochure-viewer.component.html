@@ -1,0 +1,52 @@
+<!-- <div class="brochure-viewer">
+  <div class="pdf-container" #pdfContainer>
+    <div class="page-flip" [class.flipping]="isFlipping" [class.flip-left]="flipDirection === 'left'" [class.flip-right]="flipDirection === 'right'">
+      <canvas></canvas>
+    </div>
+  </div>
+  <div class="controls">
+    <button (click)="onPrevPage()" [disabled]="pageNum <= 1">Previous</button>
+    <span>Page {{pageNum}} of {{totalPages}}</span>
+    <button (click)="onNextPage()" [disabled]="pageNum >= totalPages">Next</button>
+  </div>
+  <app-loader *ngIf="isLoading"></app-loader>
+</div>
+ -->
+ <!-- <ngx-extended-pdf-viewer
+ [src]="'https://ultrabathingconcepts.com/assets/products/ULTRA%20BATH%20CONCEPT%20BROCHURE%20DESIGN.-%2003-08-23.pdf'"
+ pageViewMode="book"
+ [showBorders]="false">
+</ngx-extended-pdf-viewer> -->
+
+
+  <div class="pdf-container" (click)="onClick($event)" (touchstart)="onTouchStart($event)">
+    <ngx-extended-pdf-viewer
+      [src]="'assets/products/ULTRA BATH CONCEPT BROCHURE DESIGN.- 03-08-23.pdf'"
+      [useBrowserLocale]="true"
+      [height]="'90vh'"
+      [zoom]="'auto'"
+      [minZoom]="0.5"
+      [maxZoom]="3"
+      [pageViewMode]="pageViewMode"
+      [showBorders]="false"
+      [showDownloadButton]="false"
+      [showFindButton]="true"
+      [showHandToolButton]="true"
+      [showPagingButtons]="true"
+      [showPresentationModeButton]="true"
+      [showPrintButton]="false"
+      [showSidebarButton]="true"
+      [showZoomButtons]="true"
+      [mobileFriendlyZoom]="'150%'"
+      [spread]="spread"
+      (pageChange)="onPageChange($event)"
+      (pdfLoaded)="onDocumentLoad($event)"
+    >
+    </ngx-extended-pdf-viewer>
+
+    <div *ngIf="isMobile" class="mobile-navigation">
+      <button (click)="previousPage()" [disabled]="currentPage <= 1">Previous</button>
+      <span>Page {{currentPage}} of {{totalPages}}</span>
+      <button (click)="nextPage()" [disabled]="currentPage >= totalPages">Next</button>
+    </div>
+  </div>
