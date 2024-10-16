@@ -1,17 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ProductsComponent } from './products/products.component';
-import { AboutUsComponent } from './about-us/about-us.component';
-import { CategoryWiseProductComponent } from './category-wise-product/category-wise-product.component';
 
 const routes: Routes = [
-  { path: '', component: DashboardComponent },
-  { path: 'about-us', component: AboutUsComponent },
-  { path: 'products', component: ProductsComponent },
-  { path: 'category-wise-products', component: CategoryWiseProductComponent },
-  { path: 'contact-us', component: ContactUsComponent }
+  { path: '', component: DashboardComponent, pathMatch: 'full' },
+
+  // { path: 'products', component: ProductsComponent },
+  { path: 'products', loadChildren: () => import('./products/products.module').then(m => m.ProductsModule) },
+  { path: 'category-wise-products', loadChildren: () => import('./category-wise-product/category-wise-product.module').then(m => m.CategoryWiseProductModule) },
+  {
+    path: 'about-us',
+    loadChildren: () => import('./about-us/about-us.module').then(m => m.AboutUsModule)
+  },
+  { path: 'contact-us', loadChildren: () => import('./contact-us/contact-us.module').then(m => m.ContactUsModule) },
 ];
 
 @NgModule({
