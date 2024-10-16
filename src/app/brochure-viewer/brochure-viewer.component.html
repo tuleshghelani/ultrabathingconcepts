@@ -18,35 +18,46 @@
  [showBorders]="false">
 </ngx-extended-pdf-viewer> -->
 
+<div class="pdf-container">
+  <ngx-extended-pdf-viewer
+    #pdfViewer
+    [src]="'assets/products/ULTRA_BATH_CONCEPT_BROCHURE_DESIGN.pdf'"
+    [useBrowserLocale]="true"
+    [height]="'90vh'"
+    [zoom]="'auto'"
+    [minZoom]="0.5"
+    [maxZoom]="3"
+    [pageViewMode]="isMobile ? 'single' : 'book'"
+    [page]="currentPage"
+    [showBorders]="false"
+    [showDownloadButton]="false"
+    [showFindButton]="false"
+    [showHandToolButton]="false"
+    [showPagingButtons]="!isMobile"
+    [showPresentationModeButton]="true"
+    [showPrintButton]="false"
+    [showSidebarButton]="true"
+    [showZoomButtons]="true"
+    [mobileFriendlyZoom]="'100%'"
+    [spread]="isMobile ? 'off' : 'even'"
+    (pageChange)="onPageChange($event)"
+    (pdfLoadComplete)="onDocumentLoad($event)"
+  ></ngx-extended-pdf-viewer>
 
-  <div class="pdf-container" (click)="onClick($event)" (touchstart)="onTouchStart($event)">
-    <ngx-extended-pdf-viewer
-      [src]="'assets/products/ULTRA BATH CONCEPT BROCHURE DESIGN.- 03-08-23.pdf'"
-      [useBrowserLocale]="true"
-      [height]="'90vh'"
-      [zoom]="'auto'"
-      [minZoom]="0.5"
-      [maxZoom]="3"
-      [pageViewMode]="pageViewMode"
-      [showBorders]="false"
-      [showDownloadButton]="false"
-      [showFindButton]="true"
-      [showHandToolButton]="true"
-      [showPagingButtons]="true"
-      [showPresentationModeButton]="true"
-      [showPrintButton]="false"
-      [showSidebarButton]="true"
-      [showZoomButtons]="true"
-      [mobileFriendlyZoom]="'150%'"
-      [spread]="spread"
-      (pageChange)="onPageChange($event)"
-      (pdfLoaded)="onDocumentLoad($event)"
+  <div *ngIf="isMobile" class="mobile-navigation">
+    <!-- <button
+      class="nav-arrow left-arrow"
+      (click)="prevPage()"
+      [disabled]="currentPage <= 1"
     >
-    </ngx-extended-pdf-viewer>
-
-    <div *ngIf="isMobile" class="mobile-navigation">
-      <button (click)="previousPage()" [disabled]="currentPage <= 1">Previous</button>
-      <span>Page {{currentPage}} of {{totalPages}}</span>
-      <button (click)="nextPage()" [disabled]="currentPage >= totalPages">Next</button>
-    </div>
+      &#8249;
+    </button>
+    <button
+      class="nav-arrow right-arrow"
+      (click)="nextPage()"
+      [disabled]="currentPage >= totalPages"
+    >
+      &#8250;
+    </button> -->
   </div>
+</div>

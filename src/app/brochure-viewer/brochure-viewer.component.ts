@@ -1,5 +1,7 @@
-import { Component, OnInit, HostListener, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgxExtendedPdfViewerComponent } from 'ngx-extended-pdf-viewer';
+import { debounceTime } from 'rxjs/operators';
+import { fromEvent } from 'rxjs';
 
 @Component({
   selector: 'app-brochure-viewer',
@@ -7,70 +9,45 @@ import { NgxExtendedPdfViewerComponent } from 'ngx-extended-pdf-viewer';
   styleUrls: ['./brochure-viewer.component.css']
 })
 export class BrochureViewerComponent implements OnInit {
-  @ViewChild(NgxExtendedPdfViewerComponent) pdfViewer!: NgxExtendedPdfViewerComponent;
+  @ViewChild('pdfViewer', { static: false }) pdfViewer!: NgxExtendedPdfViewerComponent;
 
   isMobile: boolean = false;
-  pageViewMode: 'single' | 'book' = 'book';
-  spread: 'off' | 'even' | 'odd' = 'even';
   currentPage: number = 1;
   totalPages: number = 0;
 
   ngOnInit() {
-    this.checkScreenSize();
+    this.checkMobile();
+    fromEvent(window, 'resize')
+      .pipe(debounceTime(200))
+      .subscribe(() => this.checkMobile());
   }
 
-  @HostListener('window:resize', ['$event'])
-  onResize() {
-    this.checkScreenSize();
+  checkMobile() {
+    this.isMobile = window.innerWidth <= 768;
   }
 
-  private checkScreenSize() {
-    this.isMobile = window.innerWidth < 768; // Adjust this breakpoint as needed
-    this.pageViewMode = this.isMobile ? 'single' : 'book';
-    this.spread = this.isMobile ? 'off' : 'even';
-  }
-
-  onPageChange(pageNumber: number) {
-    this.currentPage = pageNumber;
+  onPageChange(page: number) {
+    console.log('Page changed to:', page);
+    this.currentPage = page; // Update the current page state when a page changes
   }
 
   onDocumentLoad(event: any) {
+    console.log('PDF loaded with', event.pagesCount, 'pages');
     this.totalPages = event.pagesCount;
+  }
+
+  prevPage() {
+    if (this.currentPage > 1) {
+      this.currentPage--; // Update current page
+      this.pdfViewer.page = this.currentPage; // Sync with the PDF viewer
+    }
   }
 
   nextPage() {
     if (this.currentPage < this.totalPages) {
-      this.pdfViewer.page = this.currentPage + 1;
+      this.currentPage++; // Update current page
+      this.pdfViewer.page = this.currentPage; // Sync with the PDF viewer
     }
   }
-
-  previousPage() {
-    if (this.currentPage > 1) {
-      this.pdfViewer.page = this.currentPage - 1;
-    }
-  }
-
-  onTouchStart(event: TouchEvent) {
-    if (this.isMobile && event.currentTarget) {
-      const touchX = event.touches[0].clientX;
-      const viewerWidth = (event.currentTarget as HTMLElement).clientWidth;
-      if (touchX < viewerWidth / 2) {
-        this.previousPage();
-      } else {
-        this.nextPage();
-      }
-    }
-  }
-
-  onClick(event: MouseEvent) {
-    if (this.isMobile && event.currentTarget) {
-      const clickX = event.clientX;
-      const viewerWidth = (event.currentTarget as HTMLElement).clientWidth;
-      if (clickX < viewerWidth / 2) {
-        this.previousPage();
-      } else {
-        this.nextPage();
-      }
-    }
-  }
+  // Implement onClick and onTouchStart methods as needed
 }
