@@ -12,7 +12,7 @@ hr {
 }
 
 .footer {
-  background-color: #f8f0e3;
+  background-color: #fff;
   color: #333;
   font-family: 'Arial', sans-serif;
 }
@@ -53,6 +53,7 @@ hr {
 .footer-widget p {
   font-size: 0.9rem;
   line-height: 1.6;
+  color: #000;
 }
 
 .footer-links {
@@ -66,7 +67,7 @@ hr {
 }
 
 .footer-links a {
-  color: #333;
+  color: #000;
   text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease;
   display: inline-block;
@@ -88,6 +89,7 @@ hr {
   display: flex;
   align-items: center;
   transition: transform 0.3s ease;
+  color: #000;
 }
 
 .footer-contact li:hover {
@@ -106,7 +108,7 @@ hr {
 }
 
 .footer-contact a {
-  color: #333;
+  color: #000;
   text-decoration: none;
   transition: color 0.3s ease;
 }

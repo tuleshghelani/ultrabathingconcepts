@@ -1293,7 +1293,7 @@ input[type=radio]:checked~label::before {
 }
 
 .tm-padding-section {
-    margin-top: 240px !important;
+    margin-top: 40px !important;
     padding-bottom: 100px
 }
 

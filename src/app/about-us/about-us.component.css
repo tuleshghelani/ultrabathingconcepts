@@ -1,10 +1,15 @@
-.breadcrumb-area div {
-    position: absolute !important;
-    top: 37%;
-    left: 10%;
-    color: white;
-    cursor: pointer;
+.breadcrumb-area {
+  position: relative;
 }
+
+.breadcrumb-area div {
+  position: absolute !important;
+  top: 40%;
+  left: 10%;
+  color: white;
+  cursor: pointer;
+}
+
 
 .selected-image {
     width: 450px;

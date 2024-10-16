@@ -29,42 +29,44 @@
 
     <!-- Page Content -->
     <main class="page-content">
-        <div class="animated-background"></div>
+        <div class="products-container">
+            <div class="animated-background"></div>
 
-        <!-- Products Wrapper -->
-        <div class="tm-products-area tm-section tm-padding-section">
-            <div class="container">
-                <div class="tm-shop-products">
-                    <div class="row mt-30-reverse">
-                        <div
-                            class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3 col-12 mt-50"
-                            *ngFor="let product of allProductList; let i = index"
-                        >
+            <!-- Products Wrapper -->
+            <div class="tm-products-area tm-section tm-padding-section">
+                <div class="container">
+                    <div class="tm-shop-products">
+                        <div class="row mt-30-reverse">
                             <div
-                                class="product-card"
-                                [@fadeInUp]="{ value: '', params: { delay: i * 100 } }"
-                                (click)="moreProductDetails(product)"
-                                (mousemove)="onMouseMove($event, product)"
-                                data-bs-toggle="modal"
-                                data-bs-target="#moreDetailsDialog"
+                                class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3 col-12 mt-50"
+                                *ngFor="let product of allProductList; let i = index"
                             >
-                                <div class="product-image-wrapper">
-                                    <img [src]="product.productImage" alt="product image" loading="lazy" class="img-product" />
-                                    <div class="product-overlay">
-                                        <span class="view-details">View Details</span>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <h6 class="product-title">{{product.name}}</h6>
-                                    <p class="product-code">Code: {{product.code}}</p>
-                                </div>
                                 <div
-                                    class="ripple-effect"
-                                    [@ripple]="rippleState"
-                                    (@ripple.done)="onAnimationDone()"
-                                    [style.left.px]="rippleX"
-                                    [style.top.px]="rippleY"
-                                ></div>
+                                    class="product-card"
+                                    [@fadeInUp]="{ value: '', params: { delay: i * 100 } }"
+                                    (click)="moreProductDetails(product)"
+                                    (mousemove)="onMouseMove($event, product)"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#moreDetailsDialog"
+                                >
+                                    <div class="product-image-wrapper">
+                                        <img [src]="product.productImage" alt="product image" loading="lazy" class="img-product" />
+                                        <div class="product-overlay">
+                                            <span class="view-details">View Details</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h6 class="product-title">{{product.name}}</h6>
+                                        <p class="product-code">Code: {{product.code}}</p>
+                                    </div>
+                                    <div
+                                        class="ripple-effect"
+                                        [@ripple]="rippleState"
+                                        (@ripple.done)="onAnimationDone()"
+                                        [style.left.px]="rippleX"
+                                        [style.top.px]="rippleY"
+                                    ></div>
+                                </div>
                             </div>
                         </div>
                     </div>
