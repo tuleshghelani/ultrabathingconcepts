@@ -28,75 +28,71 @@
     <!--// Breadcrumb Area -->
 
     <!-- Page Content -->
-    <main class="page-content">
+    <main class="page-content full-width">
         <div class="products-container">
-            <div class="animated-background"></div>
+            <header class="products-header">
+                <h1>Our Premium Bathroom Products</h1>
+                <p>Discover luxury and functionality for your perfect bathroom</p>
+            </header>
 
-            <!-- Products Wrapper -->
-            <div class="tm-products-area tm-section tm-padding-section">
-                <div class="container">
-                    <div class="tm-shop-products">
-                        <div class="row mt-30-reverse">
-                            <div
-                                class="col-xl-3 col-lg-4 col-md-6 col-sm-6 my-3 col-12 mt-50"
-                                *ngFor="let product of allProductList; let i = index"
-                            >
-                                <div
-                                    class="product-card"
-                                    [@fadeInUp]="{ value: '', params: { delay: i * 100 } }"
-                                    (click)="moreProductDetails(product)"
-                                    (mousemove)="onMouseMove($event, product)"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#moreDetailsDialog"
-                                >
-                                    <div class="product-image-wrapper">
-                                        <img [src]="product.productImage" alt="product image" loading="lazy" class="img-product" />
-                                        <div class="product-overlay">
-                                            <span class="view-details">View Details</span>
-                                        </div>
-                                    </div>
-                                    <div class="product-info">
-                                        <h6 class="product-title">{{product.name}}</h6>
-                                        <p class="product-code">Code: {{product.code}}</p>
-                                    </div>
-                                    <div
-                                        class="ripple-effect"
-                                        [@ripple]="rippleState"
-                                        (@ripple.done)="onAnimationDone()"
-                                        [style.left.px]="rippleX"
-                                        [style.top.px]="rippleY"
-                                    ></div>
-                                </div>
-                            </div>
+            <div class="filter-container">
+                <div class="category-filter">
+                    <button class="arrow-btn left-arrow" (click)="shiftCategories(-1)" [disabled]="categoryStartIndex === 0">
+                        &lt;
+                    </button>
+                    <div class="category-buttons" #categoryButtonsContainer>
+                        <button *ngFor="let category of visibleCategories"
+                                (click)="onCategoryChange(category)"
+                                [class.active]="category === selectedCategory">
+                            {{ category }}
+                        </button>
+                    </div>
+                    <button class="arrow-btn right-arrow" (click)="shiftCategories(1)" [disabled]="categoryStartIndex + visibleCategories.length >= categories.length">
+                        &gt;
+                    </button>
+                </div>
+                <div class="search-filter">
+                    <input type="text" placeholder="Search products..." (input)="onSearch($event)">
+                </div>
+            </div>
+
+            <div class="product-grid" #productGrid [@productAnimation]="displayedProducts.length">
+                <div class="product-card" *ngFor="let product of displayedProducts; let i = index"
+                     (mouseenter)="product.hoverState = 'hovered'"
+                     (mouseleave)="product.hoverState = 'normal'">
+                    <div class="product-image" [@imageAnimation]="product.hoverState">
+                        <img [src]="product.productImage" [alt]="product.name" loading="lazy">
+                        <div class="product-overlay" [@overlayAnimation]="product.hoverState">
+                            <span class="view-details" (click)="showDetails(product)">View Details</span>
                         </div>
                     </div>
+                    <div class="product-info" [@infoAnimation]="product.hoverState">
+                        <h3>{{ product.name }}</h3>
+                        <p>Code: {{ product.code }}</p>
+                    </div>
                 </div>
+            </div>
+            <div class="loading-indicator" *ngIf="isLoading">
+                Loading more products...
             </div>
         </div>
     </main>
     <app-footer></app-footer>
 </div>
 
-<!-- more product details dialog -->
-<div class="modal" id="moreDetailsDialog" tabindex="-1" aria-labelledby="moreDetailsDialog" aria-hidden="true"
-    style="padding-right: 0px;">
+<!-- More Product Details Dialog -->
+<div class="modal" id="moreDetailsDialog" tabindex="-1" aria-labelledby="moreDetailsDialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="moreDetailsDialog">{{productDetail?.name }} Details</h5>
+                <h5 class="modal-title" id="moreDetailsDialog">{{productDetail?.name}} Details</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body row">
                 <div class="col-12 text-center">
                     <img class="selected-image" [src]="productDetail?.productImage" width="100%" height="100%">
                 </div>
-                <!-- <div class="col-6">
-                    <div class="row">
-                        <div class="col-4 mt-3 details-image" *ngFor="let item of productDetail?.allImages">
-                            <img [src]="item?.image" (click)="selectedImage(item.image)">
-                        </div>
-                    </div>
-                </div> -->
+                <!-- Add more details here as needed -->
             </div>
         </div>
     </div>

@@ -61,7 +61,7 @@ export class ProductService {
     },
     {
       name:'Towel rod',
-      category:'',
+      category:'Towel rod',
       code: '10101',
       modelNo:'',
       homepage: true,
@@ -384,7 +384,7 @@ export class ProductService {
     },
     {
       name:'Towel rack',
-      category:'',
+      category:'Towel rack',
       code: '40401',
       modelNo:'',
       homepage: true,
@@ -439,7 +439,7 @@ export class ProductService {
     this.productList = [
       {
         name:'Towel rack',
-        category:'',
+        category:'Towel rack',
         code: '10101',
         modelNo:'',
         homepage: true,
@@ -450,7 +450,7 @@ export class ProductService {
       },
       {
         name:'Towel rod',
-        category:'',
+        category:'Towel rod',
         code: '10101',
         homepage: true,
         modelNo:'',
@@ -461,7 +461,7 @@ export class ProductService {
       },
       {
         name:'Single soap dish',
-        category:'',
+        category:'Single soap dish',
         code: '10103',
         homepage: true,
         modelNo:'',
@@ -472,7 +472,7 @@ export class ProductService {
       },
       {
         name:'Double soap dish',
-        category:'',
+        category:'Double soap dish',
         code: '10104',
         homepage: true,
         modelNo:'',
@@ -483,7 +483,7 @@ export class ProductService {
       },
       {
         name:'Single tumler',
-        category:'',
+        category:'Single tumler',
         code: '10105',
         modelNo:'',
         homepage: true,
@@ -494,7 +494,7 @@ export class ProductService {
       },
       {
         name:'Liquid dispensor',
-        category:'',
+        category:'Liquid dispensor',
         code: '10106',
         homepage: true,
         modelNo:'',
@@ -505,7 +505,7 @@ export class ProductService {
       },
       {
         name:'Soap with tumler',
-        category:'',
+        category:'Soap with tumler',
         code: '10107',
         homepage: true,
         modelNo:'',
@@ -516,7 +516,7 @@ export class ProductService {
       },
       {
         name:'Soap with liquid',
-        category:'',
+        category:'Soap with liquid',
         code: '10108',
         homepage: true,
         modelNo:'',
@@ -527,7 +527,7 @@ export class ProductService {
       },
       {
         name:'Robe hook',
-        category:'',
+        category:'Robe hook',
         code: '10109',
         modelNo:'',
         price:200,
@@ -537,7 +537,7 @@ export class ProductService {
       },
       {
         name:'Sqaure napkeen stand',
-        category:'',
+        category:'Sqaure napkeen stand',
         code: '10110',
         modelNo:'',
         price:200,
@@ -547,7 +547,7 @@ export class ProductService {
       },
       {
         name:'Paper holder',
-        category:'',
+        category:'Paper holder',
         code: '10111',
         modelNo:'',
         price:200,
@@ -557,7 +557,7 @@ export class ProductService {
       },
       {
         name:'Towel rack',
-        category:'',
+        category:'Towel rack',
         code: '40401',
         modelNo:'',
         price:200,
@@ -567,7 +567,7 @@ export class ProductService {
       },
       {
         name:'Towel rod',
-        category:'',
+        category:'Towel rod',
         code: '40402',
         modelNo:'',
         price:200,
@@ -577,7 +577,7 @@ export class ProductService {
       },
       {
         name:'Single soap dish',
-        category:'',
+        category:'Single soap dish',
         code: '40403',
         modelNo:'',
         price:200,
@@ -587,7 +587,7 @@ export class ProductService {
       },
       {
         name:'Double soap dish',
-        category:'',
+        category:'Double soap dish',
         code: '40404',
         modelNo:'',
         price:200,
@@ -597,7 +597,7 @@ export class ProductService {
       },
       {
         name:'Tumler holder',
-        category:'',
+        category:'Tumler holder',
         code: '40405',
         modelNo:'',
         price:200,
@@ -607,7 +607,7 @@ export class ProductService {
       },
       {
         name:'liquid dispencer',
-        category:'',
+        category:'Liquid dispencer',
         code: '40406',
         modelNo:'',
         price:200,
@@ -617,7 +617,7 @@ export class ProductService {
       },
       {
         name:'Soap with tumler holder',
-        category:'',
+        category:'Soap with tumler holder',
         code: '40407',
         modelNo:'',
         price:200,
@@ -627,7 +627,7 @@ export class ProductService {
       },
       {
         name:'Soap with liquid',
-        category:'',
+        category:'Soap with liquid',
         code: '40408',
         modelNo:'',
         price:200,
@@ -637,7 +637,7 @@ export class ProductService {
       },
       {
         name:'Rob hook',
-        category:'',
+        category:'Rob hook',
         code: '40409',
         modelNo:'',
         price:200,
@@ -647,7 +647,7 @@ export class ProductService {
       },
       {
         name:'Napkeen ring',
-        category:'',
+        category:'Napkeen ring',
         code: '40409',
         modelNo:'',
         price:200,
@@ -657,7 +657,7 @@ export class ProductService {
       },
       {
         name:'Paper holder',
-        category:'',
+        category:'Paper holder',
         code: '40409',
         modelNo:'',
         price:200,
@@ -667,7 +667,7 @@ export class ProductService {
       },
       {
         name:'Towel rack',
-        category:'',
+        category:'Towel rack',
         code: '5001',
         modelNo:'',
         price:200,
@@ -677,7 +677,7 @@ export class ProductService {
       },
       {
         name:'Towel rod',
-        category:'',
+        category:'Towel rod',
         code: '5002',
         modelNo:'',
         price:200,
@@ -687,7 +687,7 @@ export class ProductService {
       },
       {
         name:'Single soap dish',
-        category:'',
+        category:'Single soap dish',
         code: '5003',
         modelNo:'',
         price:200,
@@ -697,7 +697,7 @@ export class ProductService {
       },
       {
         name:'Double soap dish',
-        category:'',
+        category:'Double soap dish',
         code: '5004',
         modelNo:'',
         price:200,
@@ -707,7 +707,7 @@ export class ProductService {
       },
       {
         name:'Single tumler',
-        category:'',
+        category:'Single tumler',
         code: '5005',
         modelNo:'',
         price:200,
@@ -717,7 +717,7 @@ export class ProductService {
       },
       {
         name:'Soap with tumler',
-        category:'',
+        category:'Soap with tumler',
         code: '5007',
         modelNo:'',
         price:200,
@@ -727,7 +727,7 @@ export class ProductService {
       },
       {
         name:'Self with soap & tumler',
-        category:'',
+        category:'Self with soap & tumler',
         code: '5008',
         modelNo:'',
         price:200,
@@ -737,7 +737,7 @@ export class ProductService {
       },
       {
         name:'Self bath',
-        category:'',
+        category:'Self bath',
         code: '5009',
         modelNo:'',
         price:200,
@@ -747,7 +747,7 @@ export class ProductService {
       },
       {
         name:'Napkeen stand',
-        category:'',
+        category:'Napkeen stand',
         code: '5010',
         modelNo:'',
         price:200,
@@ -757,7 +757,7 @@ export class ProductService {
       },
       {
         name:'Paper holder',
-        category:'',
+        category:'Paper holder',
         code: '5011',
         modelNo:'',
         price:200,
@@ -767,7 +767,7 @@ export class ProductService {
       },
       {
         name:'Towel rack',
-        category:'',
+        category:'Towel rack',
         code: '6001',
         modelNo:'',
         price:200,
@@ -777,7 +777,7 @@ export class ProductService {
       },
       {
         name:'Towel rod',
-        category:'',
+        category:'Towel rod',
         code: '6002',
         modelNo:'',
         price:200,
@@ -787,7 +787,7 @@ export class ProductService {
       },
       {
         name:'Double soap dish',
-        category:'',
+        category:'Double soap dish',
         code: '6003',
         modelNo:'',
         price:200,
@@ -797,7 +797,7 @@ export class ProductService {
       },
       {
         name:'Soap with tumler',
-        category:'',
+        category:'Soap with tumler',
         code: '6004',
         modelNo:'',
         price:200,
@@ -807,7 +807,7 @@ export class ProductService {
       },
       {
         name:'Single tumler',
-        category:'',
+        category:'Single tumler',
         code: '6005',
         modelNo:'',
         price:200,
@@ -817,7 +817,7 @@ export class ProductService {
       },
       {
         name:'Liquid dispensor',
-        category:'',
+        category:'Liquid dispensor',
         code: '6006',
         modelNo:'',
         price:200,
@@ -827,7 +827,7 @@ export class ProductService {
       },
       {
         name:'Rob hook',
-        category:'',
+        category:'Rob hook',
         code: '6007',
         modelNo:'',
         price:200,
@@ -837,7 +837,7 @@ export class ProductService {
       },
       {
         name:'Towel rack',
-        category:'',
+        category:'Towel rack',
         code: '2001',
         modelNo:'',
         price:200,
@@ -847,7 +847,7 @@ export class ProductService {
       },
       {
         name:'Towel rod',
-        category:'',
+        category:'Towel rod',
         code: '2002',
         modelNo:'',
         price:200,
@@ -857,7 +857,7 @@ export class ProductService {
       },
       {
         name:'Single soap dish',
-        category:'',
+        category:'Single soap dish',
         code: '2003',
         modelNo:'',
         price:200,
@@ -867,7 +867,7 @@ export class ProductService {
       },
       {
         name:'Double soap dish',
-        category:'',
+        category:'Double soap dish',
         code: '2004',
         modelNo:'',
         price:200,
@@ -877,7 +877,7 @@ export class ProductService {
       },
       {
         name:'Single tumler',
-        category:'',
+        category:'Single tumler',
         code: '2005',
         modelNo:'',
         price:200,
@@ -887,7 +887,7 @@ export class ProductService {
       },
       {
         name:'Liquid dispensor',
-        category:'',
+        category:'Liquid dispensor',
         code: '2006',
         modelNo:'',
         price:200,
@@ -897,7 +897,7 @@ export class ProductService {
       },
       {
         name:'Soap with tumler',
-        category:'',
+        category:'Soap with tumler',
         code: '2007',
         modelNo:'',
         price:200,
@@ -907,7 +907,7 @@ export class ProductService {
       },
       {
         name:'Bath self',
-        category:'',
+        category:'Bath self',
         code: '2008',
         modelNo:'',
         price:200,
@@ -917,7 +917,7 @@ export class ProductService {
       },
       {
         name:'Robe hook',
-        category:'',
+        category:'Robe hook',
         code: '2009',
         modelNo:'',
         price:200,
@@ -927,7 +927,7 @@ export class ProductService {
       },
       {
         name:'Squre napkeen stand',
-        category:'',
+        category:'Squre napkeen stand',
         code: '2010',
         modelNo:'',
         price:200,
@@ -937,7 +937,7 @@ export class ProductService {
       },
       {
         name:'Paper holder',
-        category:'',
+        category:'Paper holder',
         code: '2011',
         modelNo:'',
         price:200,
@@ -947,7 +947,7 @@ export class ProductService {
       },
       {
         name:'Towel rack',
-        category:'',
+        category:'Towel rack',
         code: '3001',
         modelNo:'',
         price:200,
@@ -957,7 +957,7 @@ export class ProductService {
       },
       {
         name:'Towel rod',
-        category:'',
+        category:'Towel rod',
         code: '3002',
         modelNo:'',
         price:200,
@@ -967,7 +967,7 @@ export class ProductService {
       },
       {
         name:'Single soap dish',
-        category:'',
+        category:'Single soap dish',
         code: '3003',
         modelNo:'',
         price:200,
@@ -977,7 +977,7 @@ export class ProductService {
       },
       {
         name:'Double soap dish',
-        category:'',
+        category:'Double soap dish',
         code: '3004',
         modelNo:'',
         price:200,
@@ -987,7 +987,7 @@ export class ProductService {
       },
       {
         name:'Single tumler',
-        category:'',
+        category:'Single tumler',
         code: '3005',
         modelNo:'',
         price:200,
@@ -997,7 +997,7 @@ export class ProductService {
       },
       {
         name:'Liquid dispensor',
-        category:'',
+        category:'Liquid dispensor',
         code: '3006',
         modelNo:'',
         price:200,
@@ -1007,7 +1007,7 @@ export class ProductService {
       },
       {
         name:'Soap with tumler',
-        category:'',
+        category:'Soap with tumler',
         code: '3007',
         modelNo:'',
         price:200,
@@ -1027,7 +1027,7 @@ export class ProductService {
       // },
       {
         name:'Square napkeen stand',
-        category:'',
+        category:'Square napkeen stand',
         code: '3010',
         modelNo:'',
         price:200,
@@ -1037,7 +1037,7 @@ export class ProductService {
       },
       {
         name:'Paper holder',
-        category:'',
+        category:'Paper holder',
         code: '3011',
         modelNo:'',
         price:200,
@@ -1047,7 +1047,7 @@ export class ProductService {
       },
       {
         name:'Towel rack',
-        category:'',
+        category:'Towel rack',
         code: '4001',
         modelNo:'',
         price:200,
@@ -1057,7 +1057,7 @@ export class ProductService {
       },
       {
         name:'Towel rod',
-        category:'',
+        category:'Towel rod',
         code: '4002',
         modelNo:'',
         price:200,
@@ -1067,7 +1067,7 @@ export class ProductService {
       },
       {
         name:'Single soap dish',
-        category:'',
+        category:'Single soap dish',
         code: '4003',
         modelNo:'',
         price:200,
@@ -1077,7 +1077,7 @@ export class ProductService {
       },
       {
         name:'Double soap dish',
-        category:'',
+        category:'Double soap dish',
         code: '4004',
         modelNo:'',
         price:200,
@@ -1087,7 +1087,7 @@ export class ProductService {
       },
       {
         name:'Single tumler',
-        category:'',
+        category:'Single tumler',
         code: '4005',
         modelNo:'',
         price:200,
@@ -1097,7 +1097,7 @@ export class ProductService {
       },
       {
         name:'Liquid dispensor',
-        category:'',
+        category:'Liquid dispensor',
         code: '4006',
         modelNo:'',
         price:200,
@@ -1107,7 +1107,7 @@ export class ProductService {
       },
       {
         name:'Soap with tumler',
-        category:'',
+        category:'Soap with tumler',
         code: '4007',
         modelNo:'',
         price:200,
@@ -1117,7 +1117,7 @@ export class ProductService {
       },
       {
         name:'Bath self with soap and tumler',
-        category:'',
+        category:'Bath self with soap and tumler',
         code: '4008',
         modelNo:'',
         price:200,
@@ -1127,7 +1127,7 @@ export class ProductService {
       },
       {
         name:'Robe hook',
-        category:'',
+        category:'Robe hook',
         code: '4009',
         modelNo:'',
         price:200,
@@ -1137,7 +1137,7 @@ export class ProductService {
       },
       {
         name:'Napkeen stand',
-        category:'',
+        category:'Napkeen stand',
         code: '4010',
         modelNo:'',
         price:200,
@@ -1147,7 +1147,7 @@ export class ProductService {
       },
       {
         name:'Paper holder',
-        category:'',
+        category:'Paper holder',
         code: '4011',
         modelNo:'',
         price:200,
@@ -1157,7 +1157,7 @@ export class ProductService {
       },
       {
         name:'Bath self',
-        category:'',
+        category:'Bath self',
         code: '4012',
         modelNo:'',
         price:200,
@@ -1167,7 +1167,7 @@ export class ProductService {
       },
       {
         name:'Liquid dispencer',
-        category:'',
+        category:'Liquid dispencer',
         code: '1001',
         modelNo:'',
         price:200,
@@ -1177,7 +1177,7 @@ export class ProductService {
       },
       {
         name:'Bath self',
-        category:'',
+        category:'Bath self',
         code: '1002',
         modelNo:'',
         price:200,
@@ -1187,7 +1187,7 @@ export class ProductService {
       },
       {
         name:'Paper holder',
-        category:'',
+        category:'Paper holder',
         code: '1003',
         modelNo:'',
         price:200,
