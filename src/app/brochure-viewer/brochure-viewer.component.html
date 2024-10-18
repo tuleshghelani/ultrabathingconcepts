@@ -21,31 +21,31 @@
 <div class="pdf-container">
   <ngx-extended-pdf-viewer
     #pdfViewer
-    [src]="'assets/products/ULTRA_BATH_CONCEPT_BROCHURE_DESIGN.pdf'"
+    [src]="'https://ultrabathingconcepts.com/assets/products/ULTRA_BATH_CONCEPT_BROCHURE_DESIGN.pdf'"
     [useBrowserLocale]="true"
     [height]="'90vh'"
     [zoom]="'auto'"
-    [minZoom]="0.5"
-    [maxZoom]="3"
+    [minZoom]="0.2"
+    [maxZoom]="8"
     [pageViewMode]="isMobile ? 'single' : 'book'"
     [page]="currentPage"
-    [showBorders]="false"
-    [showDownloadButton]="false"
+    [showBorders]="true"
+    [showDownloadButton]="true"
     [showFindButton]="false"
-    [showHandToolButton]="false"
-    [showPagingButtons]="!isMobile"
+    [showHandToolButton]="true"
+    [showPagingButtons]="true"
     [showPresentationModeButton]="true"
     [showPrintButton]="false"
     [showSidebarButton]="true"
     [showZoomButtons]="true"
     [mobileFriendlyZoom]="'100%'"
-    [spread]="isMobile ? 'off' : 'even'"
+    [spread]="'even'"
     (pageChange)="onPageChange($event)"
     (pdfLoadComplete)="onDocumentLoad($event)"
   ></ngx-extended-pdf-viewer>
 
-  <div *ngIf="isMobile" class="mobile-navigation">
-    <!-- <button
+  <div class="mobile-navigation">
+    <button
       class="nav-arrow left-arrow"
       (click)="prevPage()"
       [disabled]="currentPage <= 1"
@@ -55,9 +55,8 @@
     <button
       class="nav-arrow right-arrow"
       (click)="nextPage()"
-      [disabled]="currentPage >= totalPages"
     >
       &#8250;
-    </button> -->
+    </button>
   </div>
 </div>

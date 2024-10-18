@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgxExtendedPdfViewerComponent } from 'ngx-extended-pdf-viewer';
-import { debounceTime } from 'rxjs/operators';
 import { fromEvent } from 'rxjs';
+import { debounceTime } from 'rxjs/operators';
 
 @Component({
   selector: 'app-brochure-viewer',
@@ -9,11 +9,19 @@ import { fromEvent } from 'rxjs';
   styleUrls: ['./brochure-viewer.component.css']
 })
 export class BrochureViewerComponent implements OnInit {
-  @ViewChild('pdfViewer', { static: false }) pdfViewer!: NgxExtendedPdfViewerComponent;
+  @ViewChild('pdfViewer') pdfViewer!: NgxExtendedPdfViewerComponent;
 
   isMobile: boolean = false;
-  currentPage: number = 1;
-  totalPages: number = 0;
+  currentPage = 1;
+  totalPages = 0;
+
+  onPageChange(page: number) {
+    this.currentPage = page;
+  }
+
+  checkMobile() {
+    this.isMobile = window.innerWidth <= 768;
+  }
 
   ngOnInit() {
     this.checkMobile();
@@ -22,32 +30,20 @@ export class BrochureViewerComponent implements OnInit {
       .subscribe(() => this.checkMobile());
   }
 
-  checkMobile() {
-    this.isMobile = window.innerWidth <= 768;
-  }
-
-  onPageChange(page: number) {
-    console.log('Page changed to:', page);
-    this.currentPage = page; // Update the current page state when a page changes
-  }
-
   onDocumentLoad(event: any) {
-    console.log('PDF loaded with', event.pagesCount, 'pages');
-    this.totalPages = event.pagesCount;
+    this.totalPages = event.numPages;
+    console.log('this.totalPages : ', this.totalPages);
   }
 
   prevPage() {
     if (this.currentPage > 1) {
-      this.currentPage--; // Update current page
-      this.pdfViewer.page = this.currentPage; // Sync with the PDF viewer
+      this.pdfViewer.page = --this.currentPage;
     }
   }
 
   nextPage() {
-    if (this.currentPage < this.totalPages) {
-      this.currentPage++; // Update current page
-      this.pdfViewer.page = this.currentPage; // Sync with the PDF viewer
-    }
+    // if (this.currentPage < this.totalPages) {
+      this.pdfViewer.page = ++this.currentPage;
+    // }
   }
-  // Implement onClick and onTouchStart methods as needed
 }
