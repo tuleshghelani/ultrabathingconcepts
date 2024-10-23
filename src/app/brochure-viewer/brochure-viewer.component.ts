@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { NgxExtendedPdfViewerComponent } from 'ngx-extended-pdf-viewer';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
+import { NgxExtendedPdfViewerComponent, PDFDocumentProxy } from 'ngx-extended-pdf-viewer';
 import { fromEvent } from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
 
@@ -8,12 +8,16 @@ import { debounceTime } from 'rxjs/operators';
   templateUrl: './brochure-viewer.component.html',
   styleUrls: ['./brochure-viewer.component.css']
 })
-export class BrochureViewerComponent implements OnInit {
+export class BrochureViewerComponent implements OnInit, AfterViewInit {
+  @ViewChild(NgxExtendedPdfViewerComponent)
+  pdfComponent!: NgxExtendedPdfViewerComponent;
   @ViewChild('pdfViewer') pdfViewer!: NgxExtendedPdfViewerComponent;
+
 
   isMobile: boolean = false;
   currentPage = 1;
   totalPages = 0;
+  pdfLoaded = false;
 
   onPageChange(page: number) {
     this.currentPage = page;
@@ -30,9 +34,21 @@ export class BrochureViewerComponent implements OnInit {
       .subscribe(() => this.checkMobile());
   }
 
-  onDocumentLoad(event: any) {
-    this.totalPages = event.numPages;
-    console.log('this.totalPages : ', this.totalPages);
+  ngAfterViewInit() {
+    this.pdfComponent.src = 'assets/products/ULTRA_BATH_CONCEPT_BROCHURE_DESIGN.pdf';
+    this.pdfComponent.pdfLoaded.subscribe(() => {
+      this.pdfLoaded = true;
+    });
+  }
+
+  onPdfLoadComplete(pdf: PDFDocumentProxy): void {
+    // Handle PDF load complete
+    this.totalPages = pdf.numPages;
+  }
+
+  onPdfLoaded(event: any): void {
+    // Handle PDF loaded
+    this.pdfLoaded = true;
   }
 
   prevPage() {
@@ -43,7 +59,11 @@ export class BrochureViewerComponent implements OnInit {
 
   nextPage() {
     // if (this.currentPage < this.totalPages) {
-      this.pdfViewer.page = ++this.currentPage;
+      // this.pdfViewer.page = ++this.currentPage;
     // }
+    console.log('this.totalPages : ', this.totalPages);
+
+    this.pdfViewer.page = ++this.currentPage;
+    this.pdfViewer.page = ++this.currentPage;
   }
 }
