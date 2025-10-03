@@ -19,42 +19,42 @@ export class ProductService {
       modelNo:'',
       homepage: true,
       price:200,
-      productImage:'../../assets/products/10101/paper holder.jpg',
+      productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/paper holder.jpg',
       description:'',
       allImages:[
         {
           id:101,
-          image:'../../assets/products/10101/paper holder.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/paper holder.jpg',
           code: '10111',
         },
         {
           id:102,
-          image:'../../assets/products/40401/paper holder.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/40401/paper holder.jpg',
           code: '40409',
         },
         {
           id:103,
-          image:'../../assets/products/S.S - 202/5001/paper holder.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/5001/paper holder.jpg',
           code: '5011',
         },
         {
           id:104,
-          image:'../../assets/products/S.S - 202/2001/paper holder.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/2001/paper holder.jpg',
           code: '2011',
         },
         {
           id:105,
-          image:'../../assets/products/S.S - 202/3001/paper holder.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/3001/paper holder.jpg',
           code: '3011',
         },
         {
           id:106,
-          image:'../../assets/products/S.S - 202/4001/paper holder.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/4001/paper holder.jpg',
           code: '4011',
         },
         {
           id:107,
-          image:'../../assets/products/S.S - 202/1001/paper holder.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/1001/paper holder.jpg',
           code: '1003',
         }
       ]
@@ -66,42 +66,42 @@ export class ProductService {
       modelNo:'',
       homepage: true,
       price:200,
-      productImage:'../../assets/products/10101/towel rod.jpg',
+      productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/towel rod.jpg',
       description:'',
       allImages:[
         {
           id:201,
-          image:'../../assets/products/10101/towel rod.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/towel rod.jpg',
           code: '10101',
         },
         {
           id:202,
-          image:'../../assets/products/40401/towel rod.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/40401/towel rod.jpg',
           code: '40402',
         },
         {
           id:203,
-          image:'../../assets/products/S.S - 202/5001/towel rod.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/5001/towel rod.jpg',
           code: '5002',
         },
         {
           id:204,
-          image:'../../assets/products/S.S - 202/6001/towel rod.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/6001/towel rod.jpg',
           code: '6002',
         },
         {
           id:205,
-          image:'../../assets/products/S.S - 202/2001/towel rod.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/2001/towel rod.jpg',
           code: '2002',
         },
         {
           id:206,
-          image:'../../assets/products/S.S - 202/3001/towel rod.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/3001/towel rod.jpg',
           code: '3002',
         },
         {
           id:107,
-          image:'../../assets/products/S.S - 202/4001/towel rod.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/4001/towel rod.jpg',
           code: '4002',
         }
       ]
@@ -113,37 +113,37 @@ export class ProductService {
       modelNo:'',
       homepage: true,
       price:200,
-      productImage:'../../assets/products/10101/single soap dish.jpg',
+      productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/single soap dish.jpg',
       description:'',
       allImages:[
         {
           id:301,
-          image:'../../assets/products/10101/single soap dish.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/single soap dish.jpg',
           code: '10103',
         },
         {
           id:302,
-          image:'../../assets/products/40401/single soap dish.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/40401/single soap dish.jpg',
           code: '40403',
         },
         {
           id:303,
-          image:'../../assets/products/S.S - 202/5001/single soap dish.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/5001/single soap dish.jpg',
           code: '5003',
         },
         {
           id:304,
-          image:'../../assets/products/S.S - 202/2001/single soap dish.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/2001/single soap dish.jpg',
           code: '2003',
         },
         {
           id:305,
-          image:'../../assets/products/S.S - 202/3001/single soap dish.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/3001/single soap dish.jpg',
           code: '3003',
         },
         {
           id:306,
-          image:'../../assets/products/S.S - 202/4001/single soap dish.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/4001/single soap dish.jpg',
           code: '4003',
         }
       ]
@@ -155,42 +155,42 @@ export class ProductService {
       modelNo:'',
       homepage: true,
       price:200,
-      productImage:'../../assets/products/10101/double_soap_dish.jpg',
+      productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/double_soap_dish.jpg',
       description:'',
       allImages:[
         {
           id:401,
-          image:'../../assets/products/10101/double_soap_dish.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/double_soap_dish.jpg',
           code: '10103',
         },
         {
           id:402,
-          image:'../../assets/products/40401/double soap dish.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/40401/double soap dish.jpg',
           code: '40404',
         },
         {
           id:403,
-          image:'../../assets/products/S.S - 202/5001/double soap dish.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/5001/double soap dish.jpg',
           code: '5004',
         },
         {
           id:404,
-          image:'../../assets/products/S.S - 202/6001/double soap dish.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/6001/double soap dish.jpg',
           code: '6003',
         },
         {
           id:405,
-          image:'../../assets/products/S.S - 202/2001/double soap dish.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/2001/double soap dish.jpg',
           code: '2004',
         },
         {
           id:406,
-          image:'../../assets/products/S.S - 202/3001/double soap dish.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/3001/double soap dish.jpg',
           code: '3004',
         },
         {
           id:407,
-          image:'../../assets/products/S.S - 202/4001/double soap dish.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/4001/double soap dish.jpg',
           code: '4004',
         }
       ]
@@ -202,32 +202,32 @@ export class ProductService {
       modelNo:'',
       homepage: true,
       price:200,
-      productImage:'../../assets/products/10101/single tumler.jpg',
+      productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/single tumler.jpg',
       description:'',
       allImages:[
         {
           id:501,
-          image:'../../assets/products/10101/single tumler.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/single tumler.jpg',
           code: '10105',
         },
         {
           id:502,
-          image:'../../assets/products/S.S - 202/5001/single tumler.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/5001/single tumler.jpg',
           code: '5005',
         },
         {
           id:504,
-          image:'../../assets/products/S.S - 202/2001/single tumler.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/2001/single tumler.jpg',
           code: '2005',
         },
         {
           id:505,
-          image:'../../assets/products/S.S - 202/3001/single tumler.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/3001/single tumler.jpg',
           code: '3005',
         },
         {
           id:506,
-          image:'../../assets/products/S.S - 202/4001/single tumler.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/4001/single tumler.jpg',
           code: '4005',
         }
       ]
@@ -239,32 +239,32 @@ export class ProductService {
       modelNo:'',
       homepage: true,
       price:200,
-      productImage:'../../assets/products/10101/liquid dispensor.jpg',
+      productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/liquid dispensor.jpg',
       description:'',
       allImages:[
         {
           id:601,
-          image:'../../assets/products/10101/liquid dispensor.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/liquid dispensor.jpg',
           code: '10106',
         },
         {
           id:602,
-          image:'../../assets/products/S.S - 202/6001/liquid dispensor.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/6001/liquid dispensor.jpg',
           code: '6006',
         },
         {
           id:603,
-          image:'../../assets/products/S.S - 202/2001/liquid dispensor.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/2001/liquid dispensor.jpg',
           code: '2006',
         },
         {
           id:604,
-          image:'../../assets/products/S.S - 202/3001/liquid dispensor.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/3001/liquid dispensor.jpg',
           code: '3006',
         },
         {
           id:605,
-          image:'../../assets/products/S.S - 202/4001/liquid dispensor.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/4001/liquid dispensor.jpg',
           code: '4006',
         }
       ]
@@ -276,42 +276,42 @@ export class ProductService {
       modelNo:'',
       homepage: true,
       price:200,
-      productImage:'../../assets/products/10101/soap with tumler.jpg',
+      productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/soap with tumler.jpg',
       description:'',
       allImages:[
         {
           id:601,
-          image:'../../assets/products/10101/soap with tumler.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/soap with tumler.jpg',
           code: '10107',
         },
         {
           id:602,
-          image:'../../assets/products/40401/soap with tumler holder.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/40401/soap with tumler holder.jpg',
           code: '40407',
         },
         {
           id:603,
-          image:'../../assets/products/S.S - 202/5001/soap with tumler.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/5001/soap with tumler.jpg',
           code: '5007',
         },
         {
           id:604,
-          image:'../../assets/products/S.S - 202/6001/soap with tumler.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/6001/soap with tumler.jpg',
           code: '6004',
         },
         {
           id:2007,
-          image:'../../assets/products/S.S - 202/2001/soap with tumler.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/2001/soap with tumler.jpg',
           code: '4006',
         },
         {
           id:604,
-          image:'../../assets/products/S.S - 202/3001/soap with tumler.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/3001/soap with tumler.jpg',
           code: '3007',
         },
         {
           id:2007,
-          image:'../../assets/products/S.S - 202/4001/soap with tumler.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/4001/soap with tumler.jpg',
           code: '4007',
         }
       ]
@@ -323,12 +323,12 @@ export class ProductService {
       modelNo:'',
       homepage: true,
       price:200,
-      productImage:'../../assets/products/S.S - 202/4001/bath self with soap and tumler.jpg',
+      productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/4001/bath self with soap and tumler.jpg',
       description:'',
       allImages:[
         {
           id:601,
-          image:'../../assets/products/S.S - 202/4001/bath self with soap and tumler.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/4001/bath self with soap and tumler.jpg',
           code: '4008',
         }
       ]
@@ -340,17 +340,17 @@ export class ProductService {
       modelNo:'',
       homepage: true,
       price:200,
-      productImage:'../../assets/products/10101/soap with liquid.jpg',
+      productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/soap with liquid.jpg',
       description:'',
       allImages:[
         {
           id:601,
-          image:'../../assets/products/10101/soap with liquid.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/soap with liquid.jpg',
           code: '10108',
         },
         {
           id:602,
-          image:'../../assets/products/40401/soap with liquid.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/40401/soap with liquid.jpg',
           code: '40408',
         }
       ]
@@ -362,22 +362,22 @@ export class ProductService {
       modelNo:'',
       homepage: true,
       price:200,
-      productImage:'../../assets/products/10101/robe hook.jpg',
+      productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/robe hook.jpg',
       description:'',
       allImages:[
         {
           id:601,
-          image:'../../assets/products/10101/robe hook.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/robe hook.jpg',
           code: '10109',
         },
         {
           id:602,
-          image:'../../assets/products/S.S - 202/2001/robe hook.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/2001/robe hook.jpg',
           code: '2009',
         },
         {
           id:602,
-          image:'../../assets/products/S.S - 202/2001/robe hook.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/2001/robe hook.jpg',
           code: '4009',
         }
       ]
@@ -389,37 +389,37 @@ export class ProductService {
       modelNo:'',
       homepage: true,
       price:200,
-      productImage:'../../assets/products/40401/towel rack.jpg',
+      productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/40401/towel rack.jpg',
       description:'',
       allImages:[
         {
           id:601,
-          image:'../../assets/products/40401/towel rack.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/40401/towel rack.jpg',
           code: '40401',
         },
         {
           id:602,
-          image:'../../assets/products/S.S - 202/5001/towel rack.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/5001/towel rack.jpg',
           code: '5001',
         },
         {
           id:602,
-          image:'../../assets/products/S.S - 202/6001/towel rack.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/6001/towel rack.jpg',
           code: '6001',
         },
         {
           id:602,
-          image:'../../assets/products/S.S - 202/2001/towel rack.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/2001/towel rack.jpg',
           code: '2001',
         },
         {
           id:602,
-          image:'../../assets/products/S.S - 202/3001/towel rack.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/3001/towel rack.jpg',
           code: '3001',
         },
         {
           id:602,
-          image:'../../assets/products/S.S - 202/4001/towel rack.jpg',
+          image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/4001/towel rack.jpg',
           code: '4001',
         }
       ]
@@ -444,7 +444,7 @@ export class ProductService {
         modelNo:'',
         homepage: true,
         price:200,
-        productImage:'../../assets/products/10101/towel rack.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/towel rack.jpg',
         description:'',
         allImages:[]
       },
@@ -455,7 +455,7 @@ export class ProductService {
         homepage: true,
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/10101/towel rod.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/towel rod.jpg',
         description:'',
         allImages:[]
       },
@@ -466,7 +466,7 @@ export class ProductService {
         homepage: true,
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/10101/single soap dish.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/single soap dish.jpg',
         description:'',
         allImages:[]
       },
@@ -477,7 +477,7 @@ export class ProductService {
         homepage: true,
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/10101/double_soap_dish.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/double_soap_dish.jpg',
         description:'',
         allImages:[]
       },
@@ -488,7 +488,7 @@ export class ProductService {
         modelNo:'',
         homepage: true,
         price:200,
-        productImage:'../../assets/products/10101/single tumler.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/single tumler.jpg',
         description:'',
         allImages:[]
       },
@@ -499,7 +499,7 @@ export class ProductService {
         homepage: true,
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/10101/liquid dispensor.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/liquid dispensor.jpg',
         description:'',
         allImages:[]
       },
@@ -510,7 +510,7 @@ export class ProductService {
         homepage: true,
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/10101/soap with tumler.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/soap with tumler.jpg',
         description:'',
         allImages:[]
       },
@@ -521,7 +521,7 @@ export class ProductService {
         homepage: true,
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/10101/soap with liquid.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/soap with liquid.jpg',
         description:'',
         allImages:[]
       },
@@ -531,7 +531,7 @@ export class ProductService {
         code: '10109',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/10101/robe hook.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/robe hook.jpg',
         description:'',
         allImages:[]
       },
@@ -541,7 +541,7 @@ export class ProductService {
         code: '10110',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/10101/sqaure napkeen stand.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/sqaure napkeen stand.jpg',
         description:'',
         allImages:[]
       },
@@ -551,7 +551,7 @@ export class ProductService {
         code: '10111',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/10101/paper holder.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/paper holder.jpg',
         description:'',
         allImages:[]
       },
@@ -561,7 +561,7 @@ export class ProductService {
         code: '40401',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/40401/towel rack.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/40401/towel rack.jpg',
         description:'',
         allImages:[]
       },
@@ -571,7 +571,7 @@ export class ProductService {
         code: '40402',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/40401/towel rod.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/40401/towel rod.jpg',
         description:'',
         allImages:[]
       },
@@ -581,7 +581,7 @@ export class ProductService {
         code: '40403',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/40401/single soap dish.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/40401/single soap dish.jpg',
         description:'',
         allImages:[]
       },
@@ -591,7 +591,7 @@ export class ProductService {
         code: '40404',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/40401/double soap dish.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/40401/double soap dish.jpg',
         description:'',
         allImages:[]
       },
@@ -601,7 +601,7 @@ export class ProductService {
         code: '40405',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/40401/tumler holder.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/40401/tumler holder.jpg',
         description:'',
         allImages:[]
       },
@@ -611,7 +611,7 @@ export class ProductService {
         code: '40406',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/40401/liquid dispencer.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/40401/liquid dispencer.jpg',
         description:'',
         allImages:[]
       },
@@ -621,7 +621,7 @@ export class ProductService {
         code: '40407',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/40401/soap with tumler holder.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/40401/soap with tumler holder.jpg',
         description:'',
         allImages:[]
       },
@@ -631,7 +631,7 @@ export class ProductService {
         code: '40408',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/40401/soap with liquid.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/40401/soap with liquid.jpg',
         description:'',
         allImages:[]
       },
@@ -641,7 +641,7 @@ export class ProductService {
         code: '40409',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/40401/rob hook.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/40401/rob hook.jpg',
         description:'',
         allImages:[]
       },
@@ -651,7 +651,7 @@ export class ProductService {
         code: '40409',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/40401/napkeen ring.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/40401/napkeen ring.jpg',
         description:'',
         allImages:[]
       },
@@ -661,7 +661,7 @@ export class ProductService {
         code: '40409',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/40401/paper holder.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/40401/paper holder.jpg',
         description:'',
         allImages:[]
       },
@@ -671,7 +671,7 @@ export class ProductService {
         code: '5001',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/5001/towel rack.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/5001/towel rack.jpg',
         description:'',
         allImages:[]
       },
@@ -681,7 +681,7 @@ export class ProductService {
         code: '5002',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/5001/towel rod.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/5001/towel rod.jpg',
         description:'',
         allImages:[]
       },
@@ -691,7 +691,7 @@ export class ProductService {
         code: '5003',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/5001/single soap dish.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/5001/single soap dish.jpg',
         description:'',
         allImages:[]
       },
@@ -701,7 +701,7 @@ export class ProductService {
         code: '5004',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/5001/double soap dish.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/5001/double soap dish.jpg',
         description:'',
         allImages:[]
       },
@@ -711,7 +711,7 @@ export class ProductService {
         code: '5005',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/5001/single tumler.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/5001/single tumler.jpg',
         description:'',
         allImages:[]
       },
@@ -721,7 +721,7 @@ export class ProductService {
         code: '5007',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/5001/soap with tumler.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/5001/soap with tumler.jpg',
         description:'',
         allImages:[]
       },
@@ -731,7 +731,7 @@ export class ProductService {
         code: '5008',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/5001/self with soap & tumler.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/5001/self with soap & tumler.jpg',
         description:'',
         allImages:[]
       },
@@ -741,7 +741,7 @@ export class ProductService {
         code: '5009',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/5001/self bath.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/5001/self bath.jpg',
         description:'',
         allImages:[]
       },
@@ -751,7 +751,7 @@ export class ProductService {
         code: '5010',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/5001/napkeen stand.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/5001/napkeen stand.jpg',
         description:'',
         allImages:[]
       },
@@ -761,7 +761,7 @@ export class ProductService {
         code: '5011',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/5001/paper holder.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/5001/paper holder.jpg',
         description:'',
         allImages:[]
       },
@@ -771,7 +771,7 @@ export class ProductService {
         code: '6001',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/6001/towel rack.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/6001/towel rack.jpg',
         description:'',
         allImages:[]
       },
@@ -781,7 +781,7 @@ export class ProductService {
         code: '6002',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/6001/towel rod.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/6001/towel rod.jpg',
         description:'',
         allImages:[]
       },
@@ -791,7 +791,7 @@ export class ProductService {
         code: '6003',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/6001/double soap dish.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/6001/double soap dish.jpg',
         description:'',
         allImages:[]
       },
@@ -801,7 +801,7 @@ export class ProductService {
         code: '6004',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/6001/soap with tumler.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/6001/soap with tumler.jpg',
         description:'',
         allImages:[]
       },
@@ -811,7 +811,7 @@ export class ProductService {
         code: '6005',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/6001/single tumler.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/6001/single tumler.jpg',
         description:'',
         allImages:[]
       },
@@ -821,7 +821,7 @@ export class ProductService {
         code: '6006',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/6001/liquid dispensor.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/6001/liquid dispensor.jpg',
         description:'',
         allImages:[]
       },
@@ -831,7 +831,7 @@ export class ProductService {
         code: '6007',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/6001/rob hook.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/6001/rob hook.jpg',
         description:'',
         allImages:[]
       },
@@ -841,7 +841,7 @@ export class ProductService {
         code: '2001',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/2001/towel rack.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/2001/towel rack.jpg',
         description:'',
         allImages:[]
       },
@@ -851,7 +851,7 @@ export class ProductService {
         code: '2002',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/2001/towel rod.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/2001/towel rod.jpg',
         description:'',
         allImages:[]
       },
@@ -861,7 +861,7 @@ export class ProductService {
         code: '2003',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/2001/single soap dish.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/2001/single soap dish.jpg',
         description:'',
         allImages:[]
       },
@@ -871,7 +871,7 @@ export class ProductService {
         code: '2004',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/2001/double soap dish.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/2001/double soap dish.jpg',
         description:'',
         allImages:[]
       },
@@ -881,7 +881,7 @@ export class ProductService {
         code: '2005',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/2001/single tumler.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/2001/single tumler.jpg',
         description:'',
         allImages:[]
       },
@@ -891,7 +891,7 @@ export class ProductService {
         code: '2006',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/2001/liquid dispensor.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/2001/liquid dispensor.jpg',
         description:'',
         allImages:[]
       },
@@ -901,7 +901,7 @@ export class ProductService {
         code: '2007',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/2001/soap with tumler.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/2001/soap with tumler.jpg',
         description:'',
         allImages:[]
       },
@@ -911,7 +911,7 @@ export class ProductService {
         code: '2008',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/2001/bath self.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/2001/bath self.jpg',
         description:'',
         allImages:[]
       },
@@ -921,7 +921,7 @@ export class ProductService {
         code: '2009',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/2001/robe hook.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/2001/robe hook.jpg',
         description:'',
         allImages:[]
       },
@@ -931,7 +931,7 @@ export class ProductService {
         code: '2010',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/2001/squre napkeen stand.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/2001/squre napkeen stand.jpg',
         description:'',
         allImages:[]
       },
@@ -941,7 +941,7 @@ export class ProductService {
         code: '2011',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/2001/paper holder.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/2001/paper holder.jpg',
         description:'',
         allImages:[]
       },
@@ -951,7 +951,7 @@ export class ProductService {
         code: '3001',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/3001/towel rack.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/3001/towel rack.jpg',
         description:'',
         allImages:[]
       },
@@ -961,7 +961,7 @@ export class ProductService {
         code: '3002',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/3001/towel rod.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/3001/towel rod.jpg',
         description:'',
         allImages:[]
       },
@@ -971,7 +971,7 @@ export class ProductService {
         code: '3003',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/3001/single soap dish.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/3001/single soap dish.jpg',
         description:'',
         allImages:[]
       },
@@ -981,7 +981,7 @@ export class ProductService {
         code: '3004',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/3001/double soap dish.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/3001/double soap dish.jpg',
         description:'',
         allImages:[]
       },
@@ -991,7 +991,7 @@ export class ProductService {
         code: '3005',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/3001/single tumler.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/3001/single tumler.jpg',
         description:'',
         allImages:[]
       },
@@ -1001,7 +1001,7 @@ export class ProductService {
         code: '3006',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/3001/liquid dispensor.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/3001/liquid dispensor.jpg',
         description:'',
         allImages:[]
       },
@@ -1011,7 +1011,7 @@ export class ProductService {
         code: '3007',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/3001/soap with tumler.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/3001/soap with tumler.jpg',
         description:'',
         allImages:[]
       },
@@ -1021,7 +1021,7 @@ export class ProductService {
       //   code: '3009',
       //   modelNo:'',
       //   price:200,
-      //   productImage:'../../assets/products/S.S - 202/3001/robe hook.jpg',
+      //   productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/3001/robe hook.jpg',
       //   description:'',
       //   allImages:[]
       // },
@@ -1031,7 +1031,7 @@ export class ProductService {
         code: '3010',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/3001/square napkeen stand.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/3001/square napkeen stand.jpg',
         description:'',
         allImages:[]
       },
@@ -1041,7 +1041,7 @@ export class ProductService {
         code: '3011',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/3001/paper holder.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/3001/paper holder.jpg',
         description:'',
         allImages:[]
       },
@@ -1051,7 +1051,7 @@ export class ProductService {
         code: '4001',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/4001/towel rack.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/4001/towel rack.jpg',
         description:'',
         allImages:[]
       },
@@ -1061,7 +1061,7 @@ export class ProductService {
         code: '4002',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/4001/towel rod.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/4001/towel rod.jpg',
         description:'',
         allImages:[]
       },
@@ -1071,7 +1071,7 @@ export class ProductService {
         code: '4003',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/4001/single soap dish.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/4001/single soap dish.jpg',
         description:'',
         allImages:[]
       },
@@ -1081,7 +1081,7 @@ export class ProductService {
         code: '4004',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/4001/double soap dish.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/4001/double soap dish.jpg',
         description:'',
         allImages:[]
       },
@@ -1091,7 +1091,7 @@ export class ProductService {
         code: '4005',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/4001/single tumler.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/4001/single tumler.jpg',
         description:'',
         allImages:[]
       },
@@ -1101,7 +1101,7 @@ export class ProductService {
         code: '4006',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/4001/liquid dispensor.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/4001/liquid dispensor.jpg',
         description:'',
         allImages:[]
       },
@@ -1111,7 +1111,7 @@ export class ProductService {
         code: '4007',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/4001/soap with tumler.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/4001/soap with tumler.jpg',
         description:'',
         allImages:[]
       },
@@ -1121,7 +1121,7 @@ export class ProductService {
         code: '4008',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/4001/bath self with soap and tumler.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/4001/bath self with soap and tumler.jpg',
         description:'',
         allImages:[]
       },
@@ -1131,7 +1131,7 @@ export class ProductService {
         code: '4009',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/4001/robe hook.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/4001/robe hook.jpg',
         description:'',
         allImages:[]
       },
@@ -1141,7 +1141,7 @@ export class ProductService {
         code: '4010',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/4001/napkeen stand.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/4001/napkeen stand.jpg',
         description:'',
         allImages:[]
       },
@@ -1151,7 +1151,7 @@ export class ProductService {
         code: '4011',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/4001/paper holder.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/4001/paper holder.jpg',
         description:'',
         allImages:[]
       },
@@ -1161,7 +1161,7 @@ export class ProductService {
         code: '4012',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/4001/bath self.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/4001/bath self.jpg',
         description:'',
         allImages:[]
       },
@@ -1171,7 +1171,7 @@ export class ProductService {
         code: '1001',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/1001/liquid dispencer.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/1001/liquid dispencer.jpg',
         description:'',
         allImages:[]
       },
@@ -1181,7 +1181,7 @@ export class ProductService {
         code: '1002',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/1001/bath self.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/1001/bath self.jpg',
         description:'',
         allImages:[]
       },
@@ -1191,7 +1191,7 @@ export class ProductService {
         code: '1003',
         modelNo:'',
         price:200,
-        productImage:'../../assets/products/S.S - 202/1001/paper holder.jpg',
+        productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/S.S - 202/1001/paper holder.jpg',
         description:'',
         allImages:[]
       },
@@ -1200,28 +1200,28 @@ export class ProductService {
       //   category:'',
       //   modelNo:'',
       //   price:300,
-      //   productImage:'../../assets/products/10101/89a60075-b88d-41a5-a0c8-8e7f01ecf642.jpg',
+      //   productImage:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/89a60075-b88d-41a5-a0c8-8e7f01ecf642.jpg',
       //   description:'',
       //   allImages:[
       //     {
       //       id:1,
-      //       image:'../../assets/products/10101/89a60075-b88d-41a5-a0c8-8e7f01ecf642.jpg'
+      //       image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/89a60075-b88d-41a5-a0c8-8e7f01ecf642.jpg'
       //     },
       //     {
       //       id:2,
-      //       image:'../../assets/products/10101/941f63be-f9e4-48b0-8b1c-fd098d435f13.jpg'
+      //       image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/941f63be-f9e4-48b0-8b1c-fd098d435f13.jpg'
       //     },
       //     {
       //       id:3,
-      //       image:'../../assets/products/10101/b5cfad08-6680-4164-9123-93237391358f.jpg'
+      //       image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/b5cfad08-6680-4164-9123-93237391358f.jpg'
       //     },
       //     {
       //       id:4,
-      //       image:'../../assets/products/10101/e54b3c15-d30a-4e1f-aa59-e0788f24030c (1).jpg'
+      //       image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/e54b3c15-d30a-4e1f-aa59-e0788f24030c (1).jpg'
       //     },
       //     {
       //       id:5,
-      //       image:'../../assets/products/10101/ee011884-20d3-4901-b5af-0f0888276b33.jpg'
+      //       image:'https://tuleshghelani.github.io/ultrabathingconcepts/assets/products/10101/ee011884-20d3-4901-b5af-0f0888276b33.jpg'
       //     }
       //   ]
       // }
